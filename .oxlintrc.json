@@ -1,0 +1,17 @@
+{
+  "ignorePatterns": [
+    "templates/**",
+    "scripts/**",
+    "blocks/**",
+    "tools/**",
+    "glassexcavator/**",
+    "glasstractor/**",
+    "glasstrain/**",
+    "pnpm-workspace.yaml",
+    "**/*.md"
+  ],
+  "plugins": ["typescript", "unicorn", "react", "react-perf", "oxc", "jsx-a11y"],
+  "rules": {
+    "curly": "error"
+  }
+}

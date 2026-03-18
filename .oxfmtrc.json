@@ -1,0 +1,16 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "ignorePatterns": [
+    "templates/**",
+    "scripts/**",
+    "blocks/**",
+    "tools/**",
+    "styles/**",
+    "glassexcavator/**",
+    "glasstractor/**",
+    "glasstrain/**",
+    "pnpm-workspace.yaml",
+    "**/*.md"
+  ],
+  "endOfLine": "lf"
+}
