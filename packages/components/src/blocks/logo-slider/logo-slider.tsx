@@ -1,20 +1,20 @@
 import { createRoot } from "react-dom/client";
 import { parseHeadline, parsePicture, parseString } from "@/lib/parser.ts";
-import { LogoSlider } from "@/components/logo-slider/logo-slider.tsx";
-import { ComponentProps } from "react";
+import { DSScroller } from "@stihl-design-system/components";
+import { Headline } from "@/components/ui/headline.tsx";
+import { Picture } from "@/components/ui/picture.tsx";
+import type { Headline as HeadlineType } from "@/types/base.d.ts";
+import type { ComponentProps } from "react";
 
-export const parseHtml = (block: HTMLElement): ComponentProps<typeof LogoSlider> => {
+type LogoItem = {
+  logo: ComponentProps<typeof Picture> | undefined;
+  alt: string | undefined;
+};
+
+type LogoSliderProps = HeadlineType & { logos: LogoItem[] };
+
+export const parseHtml = (block: HTMLElement): LogoSliderProps => {
   const [headline, subheadline, link, ...logos] = Array.from(block.children);
-
-  const mappedLogos = logos?.map((logo) => {
-    const picture = logo.querySelector("picture");
-    const alt = logo.querySelector("p");
-
-    return {
-      logo: parsePicture(picture),
-      alt: parseString(alt?.textContent),
-    };
-  });
 
   return {
     ...parseHeadline(
@@ -22,13 +22,32 @@ export const parseHtml = (block: HTMLElement): ComponentProps<typeof LogoSlider>
       subheadline.textContent,
       link.querySelector("a"),
     ),
-    logos: mappedLogos || [],
+    logos: logos.map((logo) => ({
+      logo: parsePicture(logo.querySelector("picture")),
+      alt: parseString(logo.querySelector("p")?.textContent),
+    })),
   };
 };
 
+function LogoSliderBlock({ logos, ...headline }: LogoSliderProps) {
+  return (
+    <div className="space-y-20">
+      <Headline {...headline} />
+      <DSScroller>
+        {logos.map((item, index) =>
+          item.logo ? (
+            <div key={index} className="flex h-12 items-center px-10 shrink-0">
+              <Picture {...item.logo} imageClassName="h-12 w-auto object-contain" />
+            </div>
+          ) : null,
+        )}
+      </DSScroller>
+    </div>
+  );
+}
+
 export default async function decorate(block: HTMLElement) {
   const props = parseHtml(block);
-
   const root = createRoot(block);
-  root.render(<LogoSlider {...props} />);
+  root.render(<LogoSliderBlock {...props} />);
 }

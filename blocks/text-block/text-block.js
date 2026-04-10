@@ -1,6 +1,6 @@
-import { _ as e, h as t, t as n } from "../../scripts/parser-YLn5-Se2.js";
-import { v as r } from "../../scripts/utils-kL9Kd3j1.js";
-import { C as i, rt as a } from "../../scripts/react-DLNUXPF9.js";
+import { _ as e, h as t, t as n } from "../../scripts/parser-Bc1VLsF3.js";
+import { v as r } from "../../scripts/utils-Cw5qLqcS.js";
+import { E as i, nt as a } from "../../scripts/react-w7ldCLEn.js";
 //#region src/features/content/blocks/text-block.tsx
 function o({ heading: e = "", text: t = "", variant: n, primaryCta: i, secondaryCta: o }) {
 	let s = n === "horizontal";

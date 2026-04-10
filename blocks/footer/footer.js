@@ -1,12 +1,12 @@
-import { f as e, h as t, t as n } from "../../scripts/parser-YLn5-Se2.js";
-import { _ as r, l as i, u as a } from "../../scripts/utils-kL9Kd3j1.js";
-import { C as o, G as s, U as c, ct as l, kt as u, pt as d, rt as f } from "../../scripts/react-DLNUXPF9.js";
-import { t as p } from "../../scripts/esm-BB_C1aMS.js";
-import { t as m } from "../../scripts/index-DQhmSjJh.js";
-import { t as h } from "../../scripts/simple-link-B-rNfzjO.js";
-import { t as g } from "../../scripts/lazy-country-selection-sheet-gyxLJ1hG.js";
+import { f as e, h as t, t as n } from "../../scripts/parser-Bc1VLsF3.js";
+import { _ as r, l as i, u as a } from "../../scripts/utils-Cw5qLqcS.js";
+import { E as o, H as s, Ot as c, W as l, ft as u, nt as d, st as f } from "../../scripts/react-w7ldCLEn.js";
+import { t as p } from "../../scripts/esm-Ccs46AP5.js";
+import { t as m } from "../../scripts/index-x5LGNNyK.js";
+import { t as h } from "../../scripts/simple-link-O4bP7V7T.js";
+import { t as g } from "../../scripts/lazy-country-selection-sheet-De7-bgOX.js";
 //#region src/components/footer/footer.tsx
-d();
+u();
 var _ = async ([r, i, a]) => fetch(`/${r}/${i}/${a}`).then((e) => e.text()).then((r) => {
 	let i = new DOMParser().parseFromString(r, "text/html"), [a, o] = Array.from(i.body.children);
 	return {
@@ -34,20 +34,20 @@ var _ = async ([r, i, a]) => fetch(`/${r}/${i}/${a}`).then((e) => e.text()).then
 });
 function v(e) {
 	let t = e.links.filter((e) => !a(e)), n = e.links.filter((e) => a(e));
-	return /* @__PURE__ */ f("div", {
+	return /* @__PURE__ */ d("div", {
 		className: "bg-white border-b-4 border-yellow py-6",
-		children: /* @__PURE__ */ f("div", {
+		children: /* @__PURE__ */ d("div", {
 			className: "fluid flex flex-col md:items-center md:flex-row justify-between gap-6",
 			children: [
-				/* @__PURE__ */ f(l, {
-					fallback: /* @__PURE__ */ f("div", {
+				/* @__PURE__ */ d(f, {
+					fallback: /* @__PURE__ */ d("div", {
 						className: "flex text-nowrap gap-3 items-center order-1 mb-2 md:mb-0",
-						children: [/* @__PURE__ */ f(s, {}), "Global (EN)"]
+						children: [/* @__PURE__ */ d(l, {}), "Global (EN)"]
 					}),
-					children: /* @__PURE__ */ f(g, { renderTrigger: (e, t) => /* @__PURE__ */ f("div", {
+					children: /* @__PURE__ */ d(g, { renderTrigger: (e, t) => /* @__PURE__ */ d("div", {
 						className: "flex text-nowrap gap-3 items-center order-1 mb-2 md:mb-0",
 						children: [
-							/* @__PURE__ */ f(s, {}),
+							/* @__PURE__ */ d(l, {}),
 							e,
 							" (",
 							t.toUpperCase(),
@@ -55,22 +55,22 @@ function v(e) {
 						]
 					}) })
 				}),
-				/* @__PURE__ */ f("div", {
+				/* @__PURE__ */ d("div", {
 					className: "order-2 md:order-3 flex md:items-center gap-6",
-					children: n?.map((e) => /* @__PURE__ */ f("a", {
+					children: n?.map((e) => /* @__PURE__ */ d("a", {
 						href: e.link?.href ?? "#",
 						"aria-label": e.link?.title,
 						target: "_blank",
-						children: /* @__PURE__ */ f("img", {
+						children: /* @__PURE__ */ d("img", {
 							src: e.icon?.image.src,
 							alt: e.icon?.image.alt ?? e.link?.title,
 							className: "w-10 h-10"
 						})
 					}, e.link?.value))
 				}),
-				/* @__PURE__ */ f("div", {
+				/* @__PURE__ */ d("div", {
 					className: "order-3 md:order-2 flex flex-col md:flex-row md:items-center gap-4 md:gap-x-10 flex-wrap text-sm",
-					children: t.map((e) => typeof e == "string" ? /* @__PURE__ */ f("p", { children: e }, e) : /* @__PURE__ */ f(h, {
+					children: t.map((e) => typeof e == "string" ? /* @__PURE__ */ d("p", { children: e }, e) : /* @__PURE__ */ d(h, {
 						...e,
 						children: e.value
 					}, e.value))
@@ -80,21 +80,21 @@ function v(e) {
 	});
 }
 function y({ columns: e }) {
-	return /* @__PURE__ */ f("div", {
+	return /* @__PURE__ */ d("div", {
 		className: "fluid md:columns-4 gap-10 *:mb-10",
-		children: e.map((e) => e.teaser ? /* @__PURE__ */ f("div", {
+		children: e.map((e) => e.teaser ? /* @__PURE__ */ d("div", {
 			className: "space-y-6 break-inside-avoid",
 			children: [
-				/* @__PURE__ */ f("p", {
+				/* @__PURE__ */ d("p", {
 					className: "text-h5",
 					children: e.title
 				}),
-				/* @__PURE__ */ f(p, {
+				/* @__PURE__ */ d(p, {
 					className: "text-justify",
 					tagName: "p",
 					content: e.content
 				}),
-				/* @__PURE__ */ f(r, {
+				/* @__PURE__ */ d(r, {
 					className: "w-full",
 					href: e.link.href,
 					title: e.link.title,
@@ -102,16 +102,16 @@ function y({ columns: e }) {
 					children: e.link.value
 				})
 			]
-		}, e.title) : /* @__PURE__ */ f("div", {
+		}, e.title) : /* @__PURE__ */ d("div", {
 			className: "space-y-6 break-inside-avoid",
-			children: [/* @__PURE__ */ f("p", {
+			children: [/* @__PURE__ */ d("p", {
 				className: "text-h5",
 				children: e.title
-			}), /* @__PURE__ */ f("ul", {
+			}), /* @__PURE__ */ d("ul", {
 				className: "space-y-4 text-sm text-black",
-				children: e.link.map((e) => /* @__PURE__ */ f("li", { children: /* @__PURE__ */ f(h, {
+				children: e.link.map((e) => /* @__PURE__ */ d("li", { children: /* @__PURE__ */ d(h, {
 					...e,
-					children: [e.value, i(e.href) ? /* @__PURE__ */ f(c, { className: "size-3" }) : null]
+					children: [e.value, i(e.href) ? /* @__PURE__ */ d(s, { className: "size-3" }) : null]
 				}, e.value) }, e.href))
 			})]
 		}, e.title))
@@ -125,15 +125,15 @@ function b() {
 	], _);
 	if (!n) return null;
 	let { columns: r, links: i } = n;
-	return /* @__PURE__ */ f(u, { children: [/* @__PURE__ */ f("div", {
+	return /* @__PURE__ */ d(c, { children: [/* @__PURE__ */ d("div", {
 		className: "bg-gray-4 py-10 md:py-24",
-		children: /* @__PURE__ */ f(y, { columns: r })
-	}), /* @__PURE__ */ f(v, { links: i })] });
+		children: /* @__PURE__ */ d(y, { columns: r })
+	}), /* @__PURE__ */ d(v, { links: i })] });
 }
 //#endregion
 //#region src/blocks/footer/footer.tsx
 async function x(e) {
-	o(e).render(/* @__PURE__ */ f(b, {}));
+	o(e).render(/* @__PURE__ */ d(b, {}));
 }
 //#endregion
 export { x as default };

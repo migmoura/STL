@@ -1,10 +1,10 @@
-import { a as e, h as t, l as n, o as r } from "../../scripts/parser-YLn5-Se2.js";
-import { _ as i, m as a, r as o } from "../../scripts/utils-kL9Kd3j1.js";
-import { C as s, rt as c } from "../../scripts/react-DLNUXPF9.js";
-import { t as l } from "../../scripts/heading-CpqtBlxR.js";
-import { t as u } from "../../scripts/esm-BB_C1aMS.js";
-import { t as d } from "../../scripts/picture-DXSbVeQF.js";
-import { r as f } from "../../scripts/dist-DkU8_-4E.js";
+import { a as e, h as t, l as n, o as r } from "../../scripts/parser-Bc1VLsF3.js";
+import { _ as i, m as a, r as o } from "../../scripts/utils-Cw5qLqcS.js";
+import { E as s, nt as c } from "../../scripts/react-w7ldCLEn.js";
+import { t as l } from "../../scripts/heading-DSowWvXd.js";
+import { t as u } from "../../scripts/esm-Ccs46AP5.js";
+import { t as d } from "../../scripts/picture-DtJCwEBx.js";
+import { r as f } from "../../scripts/dist-BPI1VaeD.js";
 //#region src/features/content/blocks/text-image.tsx
 var p = "right", m = "left", h = "text-black", g = "text-white";
 function _({ position: e = p, heading: t, subHeading: n, content: r, media: s, items: d, ratio: m = "aspect-square", textColor: g = h }) {

@@ -1,30 +1,30 @@
-import { h as e, s as t, u as n } from "../../scripts/parser-YLn5-Se2.js";
-import { r } from "../../scripts/utils-kL9Kd3j1.js";
-import { C as i, Q as a, W as o, Z as s, pt as c, rt as l, wt as u, xt as d, yt as f } from "../../scripts/react-DLNUXPF9.js";
-import "../../scripts/heading-CpqtBlxR.js";
-import { t as p } from "../../scripts/headline-1Uwx5fu-.js";
-import "../../scripts/esm-BB_C1aMS.js";
-import "../../scripts/tag-NlcpsyaD.js";
-import { t as m } from "../../scripts/useTranslation-Cl_kknJx.js";
-import "../../scripts/picture-DXSbVeQF.js";
-import { t as h } from "../../scripts/dist-DkU8_-4E.js";
-import "../../scripts/skeleton-B-n3kDr5.js";
-import "../../scripts/es2015-Lwokp0LN.js";
-import "../../scripts/sheet-DHtRCcio.js";
-import "../../scripts/dropdown-menu-Cc3lBEdl.js";
-import { n as g } from "../../scripts/input-B3cTQm8l.js";
-import { t as _ } from "../../scripts/dropdown-filters-DdBnDeke.js";
-import "../../scripts/checkbox-BhLy_CYP.js";
-import { n as v } from "../../scripts/constants-Cb0x61ES.js";
-import { t as y } from "../../scripts/use-search-C-A3LLIr.js";
-import { n as b } from "../../scripts/teaser-C41I5SfI.js";
-import { t as x } from "../../scripts/simple-link-B-rNfzjO.js";
-import { n as S, r as C } from "../../scripts/index-page-to-teaser-BO7AmanK.js";
+import { h as e, s as t, u as n } from "../../scripts/parser-Bc1VLsF3.js";
+import { r } from "../../scripts/utils-Cw5qLqcS.js";
+import { Ct as i, E as a, U as o, X as s, Z as c, bt as l, ft as u, nt as d, vt as f } from "../../scripts/react-w7ldCLEn.js";
+import "../../scripts/heading-DSowWvXd.js";
+import { t as p } from "../../scripts/headline-CM_nM-LL.js";
+import "../../scripts/esm-Ccs46AP5.js";
+import "../../scripts/tag-CVOOa_z9.js";
+import { t as m } from "../../scripts/useTranslation-D2-izOQw.js";
+import "../../scripts/picture-DtJCwEBx.js";
+import { t as h } from "../../scripts/dist-BPI1VaeD.js";
+import "../../scripts/skeleton-amY4T5vv.js";
+import "../../scripts/es2015-CAHZSTi-.js";
+import "../../scripts/sheet-DONXsLqL.js";
+import "../../scripts/dropdown-menu-C-G7Ntkq.js";
+import { n as g } from "../../scripts/input-D5kPLzUd.js";
+import { t as _ } from "../../scripts/dropdown-filters-IlGGP1Rd.js";
+import "../../scripts/checkbox-D7WFlB1v.js";
+import { n as v } from "../../scripts/constants-W6IuTVo3.js";
+import { t as y } from "../../scripts/use-search-7ykMqwIw.js";
+import { n as b } from "../../scripts/teaser-BSOk0Trv.js";
+import { t as x } from "../../scripts/simple-link-O4bP7V7T.js";
+import { n as S, r as C } from "../../scripts/index-page-to-teaser-DzWqL8eQ.js";
 //#region src/components/ui/pagination.tsx
-c();
+u();
 function w({ className: e, ...t }) {
 	let { t: n } = m();
-	return /* @__PURE__ */ l("nav", {
+	return /* @__PURE__ */ d("nav", {
 		"aria-label": n("Pagination"),
 		"data-slot": "pagination",
 		className: r("mx-auto flex w-full justify-center gap-6", e),
@@ -32,20 +32,20 @@ function w({ className: e, ...t }) {
 	});
 }
 function T({ className: e, ...t }) {
-	return /* @__PURE__ */ l("ul", {
+	return /* @__PURE__ */ d("ul", {
 		"data-slot": "pagination-content",
 		className: r("flex flex-row items-center gap-4", e),
 		...t
 	});
 }
 function E({ ...e }) {
-	return /* @__PURE__ */ l("li", {
+	return /* @__PURE__ */ d("li", {
 		"data-slot": "pagination-item",
 		...e
 	});
 }
 function D({ isActive: e, ...t }) {
-	return /* @__PURE__ */ l(x, {
+	return /* @__PURE__ */ d(x, {
 		"aria-current": e ? "page" : void 0,
 		"data-slot": "pagination-link",
 		"data-active": e,
@@ -54,11 +54,11 @@ function D({ isActive: e, ...t }) {
 }
 function O({ className: e, ...t }) {
 	let { t: n } = m();
-	return /* @__PURE__ */ l(D, {
+	return /* @__PURE__ */ d(D, {
 		"aria-label": n("Go to previous page"),
 		className: r("flex items-center gap-1", e),
 		...t,
-		children: [/* @__PURE__ */ l(a, {}), /* @__PURE__ */ l("span", {
+		children: [/* @__PURE__ */ d(c, {}), /* @__PURE__ */ d("span", {
 			className: "hidden sm:block",
 			children: n("Previous")
 		})]
@@ -66,24 +66,24 @@ function O({ className: e, ...t }) {
 }
 function k({ className: e, ...t }) {
 	let { t: n } = m();
-	return /* @__PURE__ */ l(D, {
+	return /* @__PURE__ */ d(D, {
 		"aria-label": n("Go to next page"),
 		className: r("flex items-center gap-1", e),
 		...t,
-		children: [/* @__PURE__ */ l("span", {
+		children: [/* @__PURE__ */ d("span", {
 			className: "hidden sm:block",
 			children: n("Next")
-		}), /* @__PURE__ */ l(s, {})]
+		}), /* @__PURE__ */ d(s, {})]
 	});
 }
 function A({ className: e, ...t }) {
 	let { t: n } = m();
-	return /* @__PURE__ */ l("span", {
+	return /* @__PURE__ */ d("span", {
 		"aria-hidden": !0,
 		"data-slot": "pagination-ellipsis",
 		className: r("flex items-center gap-1", e),
 		...t,
-		children: [/* @__PURE__ */ l(o, { className: "size-4" }), /* @__PURE__ */ l("span", {
+		children: [/* @__PURE__ */ d(o, { className: "size-4" }), /* @__PURE__ */ d("span", {
 			className: "sr-only",
 			children: n("More pages")
 		})]
@@ -91,7 +91,7 @@ function A({ className: e, ...t }) {
 }
 //#endregion
 //#region src/features/search/components/results-pagination.tsx
-c();
+u();
 function j() {
 	let e = new URLSearchParams(window.location.search), t = parseInt(e.get("page") || "1", 10), n = e.getAll("tags"), r = e.getAll("year").map(String);
 	return {
@@ -114,18 +114,18 @@ function N({ currentPage: e, totalPages: t, buildHref: n }) {
 		for (let e = r; e <= i; e++) n.push(e);
 		return i < t - 1 && n.push(-1), t > 1 && n.push(t), n;
 	}, [e, t]);
-	return t <= 1 ? null : /* @__PURE__ */ l(w, { children: [
-		/* @__PURE__ */ l(O, {
+	return t <= 1 ? null : /* @__PURE__ */ d(w, { children: [
+		/* @__PURE__ */ d(O, {
 			href: n(e - 1),
 			isActive: e === 1
 		}),
-		/* @__PURE__ */ l(T, { children: r.map((t) => t === -1 ? /* @__PURE__ */ l(E, { children: /* @__PURE__ */ l(A, {}) }, `ellipsis-${t}`) : /* @__PURE__ */ l(E, { children: /* @__PURE__ */ l(D, {
+		/* @__PURE__ */ d(T, { children: r.map((t) => t === -1 ? /* @__PURE__ */ d(E, { children: /* @__PURE__ */ d(A, {}) }, `ellipsis-${t}`) : /* @__PURE__ */ d(E, { children: /* @__PURE__ */ d(D, {
 			className: "group-data-[active=true]:shadow-[inset_0_-2px_0_0] group-data-[active=true]:shadow-pressed",
 			href: n(t),
 			isActive: t === e,
 			children: t
 		}) }, t)) }),
-		/* @__PURE__ */ l(k, {
+		/* @__PURE__ */ d(k, {
 			href: n(e + 1),
 			isActive: e === t
 		})
@@ -133,11 +133,11 @@ function N({ currentPage: e, totalPages: t, buildHref: n }) {
 }
 //#endregion
 //#region src/features/search/blocks/results-grid.tsx
-c();
+u();
 var P = 12;
-function F({ url: e, labels: t, config: n, showDescription: r = !0, ...i }) {
-	let [{ page: a, tags: o, sort: s, years: c }, f] = d(j), [m, x] = d(o), [w, T] = d(c), [E, D] = d(s), [O, k] = d(), A = h(k, 300), { hits: F, facets: I, count: L } = y(O, e, {
-		offset: (a - 1) * P,
+function F({ url: e, labels: t, config: n, showDescription: r = !0, ...a }) {
+	let [{ page: o, tags: s, sort: c, years: u }, f] = l(j), [m, x] = l(s), [w, T] = l(u), [E, D] = l(c), [O, k] = l(), A = h(k, 300), { hits: F, facets: I, count: L } = y(O, e, {
+		offset: (o - 1) * P,
 		tags: m.length > 0 ? m : void 0,
 		year: w.length > 0 ? w : void 0,
 		sort: v[E],
@@ -146,7 +146,7 @@ function F({ url: e, labels: t, config: n, showDescription: r = !0, ...i }) {
 			tags: { limit: 20 },
 			year: { limit: 20 }
 		}
-	}), R = C(n.filter, I?.tags.values), z = C(n.year, I?.year.values), B = F.map(S(t.link)), V = Math.ceil((L ?? 0) / P), H = u((e) => {
+	}), R = C(n.filter, I?.tags.values), z = C(n.year, I?.year.values), B = F.map(S(t.link)), V = Math.ceil((L ?? 0) / P), H = i((e) => {
 		if (e < 1 || e > V) return "";
 		let t = new URLSearchParams();
 		return t.set("page", e.toString()), m.forEach((e) => t.append("tags", e)), E && t.set("sort", E), w.length > 0 && w.forEach((e) => t.append("year", e)), `${window.location.pathname}?${t.toString()}`;
@@ -154,45 +154,45 @@ function F({ url: e, labels: t, config: n, showDescription: r = !0, ...i }) {
 		V,
 		m,
 		E
-	]), U = u((e) => {
+	]), U = i((e) => {
 		x(e);
 		let t = {
 			page: 1,
 			tags: e,
-			years: c,
+			years: u,
 			sort: E
 		};
 		M(t), f(t);
-	}, [E]), W = u((e) => {
+	}, [E]), W = i((e) => {
 		T(e.map(String));
 		let t = {
 			page: 1,
-			tags: o,
+			tags: s,
 			sort: E,
 			years: e
 		};
 		M(t), f(t);
-	}, [E]), G = u((e) => {
+	}, [E]), G = i((e) => {
 		D(e);
 		let t = {
 			page: 1,
-			years: c,
+			years: u,
 			tags: m,
 			sort: e
 		};
 		M(t), f(t);
 	}, [m]);
-	return /* @__PURE__ */ l("div", {
+	return /* @__PURE__ */ d("div", {
 		className: "space-y-20",
 		children: [
-			/* @__PURE__ */ l(p, { ...i }),
-			/* @__PURE__ */ l("div", {
+			/* @__PURE__ */ d(p, { ...a }),
+			/* @__PURE__ */ d("div", {
 				className: "flex flex-wrap gap-6 lg:mx-[150px]",
-				children: [n?.search?.hidden ? null : /* @__PURE__ */ l(g, {
+				children: [n?.search?.hidden ? null : /* @__PURE__ */ d(g, {
 					placeholder: n.search.label,
 					className: "w-full md:w-fit",
 					onChange: (e) => A(e.target.value)
-				}), /* @__PURE__ */ l(_, {
+				}), /* @__PURE__ */ d(_, {
 					className: "flex-1",
 					filters: R,
 					years: z,
@@ -205,19 +205,19 @@ function F({ url: e, labels: t, config: n, showDescription: r = !0, ...i }) {
 					sortOptions: v
 				})]
 			}),
-			/* @__PURE__ */ l("div", {
+			/* @__PURE__ */ d("div", {
 				className: "flex flex-col gap-10 md:gap-y-20 md:grid md:grid-cols-4",
-				children: B.map((e) => /* @__PURE__ */ l("article", {
+				children: B.map((e) => /* @__PURE__ */ d("article", {
 					className: "w-full",
-					children: /* @__PURE__ */ l(b, {
+					children: /* @__PURE__ */ d(b, {
 						...e,
 						showDescription: r,
 						aspectRatio: "aspect-2/1"
 					})
 				}, e.title))
 			}),
-			/* @__PURE__ */ l(N, {
-				currentPage: a > V ? V : a,
+			/* @__PURE__ */ d(N, {
+				currentPage: o > V ? V : o,
 				totalPages: V,
 				buildHref: H
 			})
@@ -254,7 +254,7 @@ function L(r) {
 }
 async function R(e) {
 	let t = L(e);
-	i(e).render(/* @__PURE__ */ l(F, { ...t }));
+	a(e).render(/* @__PURE__ */ d(F, { ...t }));
 }
 //#endregion
 export { R as default };

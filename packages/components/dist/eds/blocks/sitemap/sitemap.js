@@ -1,6 +1,6 @@
-import { m as e } from "../../scripts/utils-kL9Kd3j1.js";
-import { C as t, rt as n } from "../../scripts/react-DLNUXPF9.js";
-import { t as r } from "../../scripts/esm-BB_C1aMS.js";
+import { m as e } from "../../scripts/utils-Cw5qLqcS.js";
+import { E as t, nt as n } from "../../scripts/react-w7ldCLEn.js";
+import { t as r } from "../../scripts/esm-Ccs46AP5.js";
 //#region src/blocks/sitemap/sitemap.tsx
 async function i(i) {
 	t(i).render(/* @__PURE__ */ n(r, {

@@ -1,18 +1,15 @@
-export default function decorate(block) {
-  const cols = [...block.firstElementChild.children];
-  block.classList.add(`columns-${cols.length}-cols`);
-
-  // setup image columns
-  [...block.children].forEach((row) => {
-    [...row.children].forEach((col) => {
-      const pic = col.querySelector('picture');
-      if (pic) {
-        const picWrapper = pic.closest('div');
-        if (picWrapper && picWrapper.children.length === 1) {
-          // picture is only content in column
-          picWrapper.classList.add('columns-img-col');
-        }
-      }
-    });
-  });
+//#region src/blocks/columns/columns.tsx
+function e(e) {
+	let t = [...e.firstElementChild?.children ?? []];
+	e.classList.add(`columns-${t.length}-cols`), [...e.children].forEach((e) => {
+		[...e.children].forEach((e) => {
+			let t = e.querySelector("picture");
+			if (t) {
+				let e = t.closest("div");
+				e && e.children.length === 1 && e.classList.add("columns-img-col");
+			}
+		});
+	});
 }
+//#endregion
+export { e as default };

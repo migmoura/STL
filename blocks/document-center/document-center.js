@@ -1,49 +1,49 @@
 import { i as e, o as t, t as n } from "../../scripts/rolldown-runtime-Ctdjzu3q.js";
-import { h as r, s as i, u as a } from "../../scripts/parser-YLn5-Se2.js";
-import { _ as o, g as s, i as c, r as l, v as u } from "../../scripts/utils-kL9Kd3j1.js";
-import { $ as d, C as f, Dt as p, Et as m, K as h, St as g, T as _, Tt as v, ct as y, gt as b, kt as x, pt as S, rt as C, w, wt as T, xt as E, yt as D } from "../../scripts/react-DLNUXPF9.js";
-import "../../scripts/heading-CpqtBlxR.js";
-import { t as O } from "../../scripts/headline-1Uwx5fu-.js";
-import { t as k } from "../../scripts/esm-BB_C1aMS.js";
-import { t as A } from "../../scripts/tag-NlcpsyaD.js";
-import "../../scripts/i18next-BMrk8wO1.js";
-import { t as j } from "../../scripts/useTranslation-Cl_kknJx.js";
-import "../../scripts/picture-DXSbVeQF.js";
-import { t as M } from "../../scripts/vanilla-D2rZDUKG.js";
-import { a as N, c as P, i as F, l as I, n as L, o as R, r as z, s as B, t as V } from "../../scripts/dialog-s3Hh3x-u.js";
-import { n as H, t as U } from "../../scripts/dist-DkU8_-4E.js";
-import { t as W } from "../../scripts/skeleton-B-n3kDr5.js";
-import "../../scripts/es2015-Lwokp0LN.js";
-import { a as G, n as K, t as q } from "../../scripts/sheet-DHtRCcio.js";
-import { n as J, r as Y, s as X, t as Z } from "../../scripts/dropdown-menu-Cc3lBEdl.js";
-import { n as ee } from "../../scripts/input-B3cTQm8l.js";
-import { t as Q } from "../../scripts/checkbox-BhLy_CYP.js";
-import "../../scripts/i18next-41Eg61UZ.js";
-import { c as te, d as ne, n as re, r as ie, u as ae } from "../../scripts/constants-Cb0x61ES.js";
-import { t as oe } from "../../scripts/dist-BsjL6UoT.js";
-import { t as se } from "../../scripts/teaser-C41I5SfI.js";
+import { h as r, s as i, u as a } from "../../scripts/parser-Bc1VLsF3.js";
+import { _ as o, g as s, i as c, r as l, v as u } from "../../scripts/utils-Cw5qLqcS.js";
+import { Ct as d, D as f, E as p, Et as m, G as h, O as g, Ot as _, Q as v, Tt as y, bt as b, ft as x, ht as S, nt as C, st as w, vt as T, wt as E, xt as D } from "../../scripts/react-w7ldCLEn.js";
+import "../../scripts/heading-DSowWvXd.js";
+import { t as O } from "../../scripts/headline-CM_nM-LL.js";
+import { t as k } from "../../scripts/esm-Ccs46AP5.js";
+import { t as A } from "../../scripts/tag-CVOOa_z9.js";
+import "../../scripts/i18next-Bnts7JEk.js";
+import { t as j } from "../../scripts/useTranslation-D2-izOQw.js";
+import "../../scripts/picture-DtJCwEBx.js";
+import { t as M } from "../../scripts/vanilla-BpCtWsxj.js";
+import { a as N, c as P, i as F, l as I, n as L, o as R, r as z, s as B, t as V } from "../../scripts/dialog-BTN4aC_K.js";
+import { n as H, t as U } from "../../scripts/dist-BPI1VaeD.js";
+import { t as W } from "../../scripts/skeleton-amY4T5vv.js";
+import "../../scripts/es2015-CAHZSTi-.js";
+import { a as G, n as K, t as q } from "../../scripts/sheet-DONXsLqL.js";
+import { n as J, r as Y, s as X, t as Z } from "../../scripts/dropdown-menu-C-G7Ntkq.js";
+import { n as ee } from "../../scripts/input-D5kPLzUd.js";
+import { t as Q } from "../../scripts/checkbox-D7WFlB1v.js";
+import "../../scripts/i18next-CiaISZrJ.js";
+import { c as te, d as ne, n as re, r as ie, u as ae } from "../../scripts/constants-W6IuTVo3.js";
+import { t as oe } from "../../scripts/dist-DW4cn9wV.js";
+import { t as se } from "../../scripts/teaser-BSOk0Trv.js";
 //#region src/lib/search/context/search-context.ts
-S();
-var ce = p(null);
+x();
+var ce = m(null);
 function le() {
-	let e = v(ce);
+	let e = E(ce);
 	if (!e) throw Error("useSearchContext must be used inside SearchProvider");
 	return e;
 }
 //#endregion
 //#region src/lib/search/context/filters-context.ts
-S();
-var ue = p(null);
+x();
+var ue = m(null);
 function de() {
-	let e = v(ue);
+	let e = E(ue);
 	if (!e) throw Error("useFilterContext must be used inside FilterProvider");
 	return e;
 }
 //#endregion
 //#region src/lib/search/context/filters-provider.tsx
-S();
+x();
 function fe({ children: e, filtersConfig: t = [], sortConfig: n = [] }) {
-	let [r, i] = E({}), [a, o] = E(), [s, c] = E({}), l = D(() => ({
+	let [r, i] = b({}), [a, o] = b(), [s, c] = b({}), l = T(() => ({
 		filters: r,
 		filtersConfig: t,
 		setFilters: i,
@@ -66,18 +66,18 @@ function fe({ children: e, filtersConfig: t = [], sortConfig: n = [] }) {
 }
 //#endregion
 //#region src/lib/search/context/search-controls-context.ts
-S();
-var pe = p(null);
+x();
+var pe = m(null);
 function me() {
-	let e = v(pe);
+	let e = E(pe);
 	if (!e) throw Error("useSearchControlsContext must be used inside SearchControlsProvider");
 	return e;
 }
 //#endregion
 //#region src/lib/search/context/search-controls-provider.tsx
-S();
+x();
 function he({ children: e, limit: t = 12, initialOffset: n = 0 }) {
-	let [r, i] = E(n), [a, o] = E(0), [s, c] = E(!1), l = D(() => ({
+	let [r, i] = b(n), [a, o] = b(0), [s, c] = b(!1), l = T(() => ({
 		count: a,
 		limit: t,
 		offset: r,
@@ -98,9 +98,9 @@ function he({ children: e, limit: t = 12, initialOffset: n = 0 }) {
 }
 //#endregion
 //#region src/lib/search/context/search-provider.tsx
-S();
+x();
 function ge({ engines: e, children: t, limit: n = 12, ...r }) {
-	let i = D(() => ({ getEngine: (t) => {
+	let i = T(() => ({ getEngine: (t) => {
 		let n = e?.[t];
 		if (!n) throw Error(`Search engine not found: ${String(t)}`);
 		return n;
@@ -228,17 +228,17 @@ function De(e) {
 }
 //#endregion
 //#region src/lib/search/hooks/use-sort.ts
-S();
+x();
 function Oe() {
 	let { sort: e, sortConfig: t, setSort: n } = de();
-	return m(() => {
+	return y(() => {
 		t.length > 0 && e === void 0 && n(t[0]);
 	}, [
 		t,
 		e,
 		n
 	]), {
-		options: D(() => t.map((r, i) => ({
+		options: T(() => t.map((r, i) => ({
 			...r,
 			isSelected: r === e,
 			select: () => n(r ?? t[i])
@@ -248,16 +248,16 @@ function Oe() {
 			n
 		]),
 		selected: e,
-		clear: T(() => {
+		clear: d(() => {
 			n(void 0);
 		}, [n])
 	};
 }
 //#endregion
 //#region src/lib/search/hooks/use-filters.ts
-S();
+x();
 function ke() {
-	let { filters: e, filtersConfig: t, setFilters: n, facet: r } = de(), i = T((t) => {
+	let { filters: e, filtersConfig: t, setFilters: n, facet: r } = de(), i = d((t) => {
 		let i = e[t.label.toLowerCase()] ?? [], a = t.options.length === 0 && r ? Object.keys(r[t.field] || {}) : t.options;
 		return {
 			label: t.label,
@@ -287,22 +287,22 @@ function ke() {
 		r,
 		e,
 		n
-	]), a = D(() => t.reduce((e, t) => (e[t.label.toLowerCase()] = i(t), e), {}), [
+	]), a = T(() => t.reduce((e, t) => (e[t.label.toLowerCase()] = i(t), e), {}), [
 		t,
 		e,
 		r
-	]), o = T(() => {
+	]), o = d(() => {
 		n({});
 	}, [n]);
 	return {
 		filters: a,
-		hasFilters: D(() => Object.keys(e).length > 0, [e]),
+		hasFilters: T(() => Object.keys(e).length > 0, [e]),
 		resetFilters: o
 	};
 }
 //#endregion
 //#region src/lib/search/hooks/use-search.ts
-S();
+x();
 function Ae(e) {
 	let t = {};
 	return s(e).forEach((e) => {
@@ -317,13 +317,13 @@ function Me(e) {
 	return e ? c(e).reduce((e, [t, n]) => (e[t] = n.values, e), {}) : {};
 }
 function Ne({ engineKey: e, query: t, options: n = {} }) {
-	let r = De(e), { selected: i } = Oe(), { filtersConfig: a, setFacet: o } = de(), { count: s, limit: c, offset: l, loading: u, setCount: d, setLoading: f, setOffset: p } = me(), { filters: h } = ke(), [g, _] = E([]), [v, y] = E(null), [x] = H(t, n.debounce ?? 100), S = b(h), C = b(x), w = b(""), T = b(i), O = D(() => {
-		let e = JSON.stringify(h);
-		return S.current = h, e;
-	}, [h]);
-	m(() => {
-		let e = C.current !== x, t = w.current !== O, r = T.current !== i;
-		n.infinite && (e || t || r) && (_([]), p(0)), C.current = x, w.current = O, T.current = i;
+	let r = De(e), { selected: i } = Oe(), { filtersConfig: a, setFacet: o } = de(), { count: s, limit: c, offset: l, loading: u, setCount: d, setLoading: f, setOffset: p } = me(), { filters: m } = ke(), [h, g] = b([]), [_, v] = b(null), [x] = H(t, n.debounce ?? 100), C = S(m), w = S(x), E = S(""), D = S(i), O = T(() => {
+		let e = JSON.stringify(m);
+		return C.current = m, e;
+	}, [m]);
+	y(() => {
+		let e = w.current !== x, t = E.current !== O, r = D.current !== i;
+		n.infinite && (e || t || r) && (g([]), p(0)), w.current = x, E.current = O, D.current = i;
 	}, [
 		x,
 		O,
@@ -331,13 +331,13 @@ function Ne({ engineKey: e, query: t, options: n = {} }) {
 		n.infinite,
 		p
 	]);
-	let k = D(() => Ae(S.current), [O]), A = D(() => je(a), [a]), j = D(() => {
+	let k = T(() => Ae(C.current), [O]), A = T(() => je(a), [a]), j = T(() => {
 		if (i) return "sortFn" in i ? i.sortFn : i;
 	}, [i]);
-	return m(() => {
+	return y(() => {
 		let e = !1;
 		return r ? (j && (async () => {
-			f(!0), y(null);
+			f(!0), v(null);
 			try {
 				let t = await te(r, {
 					term: x,
@@ -347,9 +347,9 @@ function Ne({ engineKey: e, query: t, options: n = {} }) {
 					where: k,
 					facets: A
 				});
-				e || (n.infinite && l > 0 ? _((e) => [...e, ...t.hits]) : _(t.hits), d(t.count), o(Me(t.facets)));
+				e || (n.infinite && l > 0 ? g((e) => [...e, ...t.hits]) : g(t.hits), d(t.count), o(Me(t.facets)));
 			} catch (t) {
-				e || y(t);
+				e || v(t);
 			} finally {
 				e || f(!1);
 			}
@@ -367,9 +367,9 @@ function Ne({ engineKey: e, query: t, options: n = {} }) {
 		A
 	]), {
 		count: s,
-		results: g,
+		results: h,
 		loading: u,
-		error: v
+		error: _
 	};
 }
 //#endregion
@@ -381,9 +381,9 @@ var Pe = (e) => Ne({
 });
 //#endregion
 //#region src/features/documents/components/controlled-dropdown-menu.tsx
-S();
+x();
 function Fe({ children: e }) {
-	let [t, n] = E(!1);
+	let [t, n] = b(!1);
 	return /* @__PURE__ */ C(Z, {
 		open: t,
 		onOpenChange: n,
@@ -396,21 +396,21 @@ function Fe({ children: e }) {
 }
 //#endregion
 //#region src/features/documents/hooks/use-temporary-filter.ts
-S();
+x();
 function Ie(e, { reset: t, callback: n } = {}) {
-	let [r, i] = E(() => [...e.value]);
-	m(() => {
+	let [r, i] = b(() => [...e.value]);
+	y(() => {
 		t || i([...e.value]);
 	}, [t, e.value]);
-	let a = T((e) => r.includes(e), [r]), o = T((t, n) => {
+	let a = d((e) => r.includes(e), [r]), o = d((t, n) => {
 		i((r) => e.multiselect ? n && !r.includes(t) ? [...r, t] : n ? r : r.filter((e) => e !== t) : n ? [t] : []);
-	}, [e.multiselect]), s = T(() => {
+	}, [e.multiselect]), s = d(() => {
 		i([]), e.clear();
 	}, [e]);
 	return {
 		handleCheckedChange: o,
 		isChecked: a,
-		handleSave: T(() => {
+		handleSave: d(() => {
 			e.multiselect ? e.set(r) : r[0] ? e.set([r[0]]) : e.clear(), n?.();
 		}, [e, r]),
 		handleReset: s,
@@ -505,7 +505,7 @@ function Re({ filter: e }) {
 //#region src/features/documents/components/filter-dropdown-item.tsx
 function ze({ filter: e }) {
 	let { t } = j(), n = () => e.multiselect ? e.value.length === 0 ? t("all") : e.value.length : e.value.at(0);
-	return /* @__PURE__ */ C(x, { children: [/* @__PURE__ */ C(Fe, { children: ({ close: t, open: r }) => /* @__PURE__ */ C(x, { children: [/* @__PURE__ */ C(X, {
+	return /* @__PURE__ */ C(_, { children: [/* @__PURE__ */ C(Fe, { children: ({ close: t, open: r }) => /* @__PURE__ */ C(_, { children: [/* @__PURE__ */ C(X, {
 		className: "hidden md:block outline-none",
 		children: /* @__PURE__ */ C(A, {
 			variant: "secondary",
@@ -514,7 +514,7 @@ function ze({ filter: e }) {
 				" (",
 				n(),
 				")",
-				/* @__PURE__ */ C(d, { className: "size-4" })
+				/* @__PURE__ */ C(v, { className: "size-4" })
 			]
 		})
 	}), /* @__PURE__ */ C(Le, {
@@ -530,7 +530,7 @@ function ze({ filter: e }) {
 				" (",
 				n(),
 				")",
-				/* @__PURE__ */ C(d, { className: "size-4" })
+				/* @__PURE__ */ C(v, { className: "size-4" })
 			]
 		})
 	}), /* @__PURE__ */ C(Re, { filter: e })] })] });
@@ -543,7 +543,7 @@ function Be({ onReset: e }) {
 		asChild: !0,
 		children: /* @__PURE__ */ C("button", {
 			onClick: e,
-			children: [t("Delete all"), /* @__PURE__ */ C(_, { className: "size-4" })]
+			children: [t("Delete all"), /* @__PURE__ */ C(g, { className: "size-4" })]
 		})
 	});
 }
@@ -566,7 +566,7 @@ function Ve() {
 				className: "hidden md:inline",
 				children: n?.label.long
 			}),
-			/* @__PURE__ */ C(d, {})
+			/* @__PURE__ */ C(v, {})
 		]
 	}), /* @__PURE__ */ C(Y, {
 		className: "w-full",
@@ -604,9 +604,9 @@ function He({ className: e }) {
 }
 //#endregion
 //#region src/lib/search/hooks/use-search-controls.ts
-S();
+x();
 function Ue() {
-	let { count: e, limit: t, offset: n, loading: r, setOffset: i } = me(), a = D(() => e === 0 || t === 0 ? 0 : Math.ceil(e / t), [e, t]), o = D(() => t === 0 ? 1 : Math.floor(n / t) + 1, [n, t]), s = D(() => o < a, [o, a]), c = D(() => o > 1, [o]), l = D(() => o === 1, [o]), u = D(() => o === a || a === 0, [o, a]), d = D(() => a === 0 ? [] : Array.from({ length: a }, (e, t) => t + 1), [a]), f = T((e) => {
+	let { count: e, limit: t, offset: n, loading: r, setOffset: i } = me(), a = T(() => e === 0 || t === 0 ? 0 : Math.ceil(e / t), [e, t]), o = T(() => t === 0 ? 1 : Math.floor(n / t) + 1, [n, t]), s = T(() => o < a, [o, a]), c = T(() => o > 1, [o]), l = T(() => o === 1, [o]), u = T(() => o === a || a === 0, [o, a]), f = T(() => a === 0 ? [] : Array.from({ length: a }, (e, t) => t + 1), [a]), p = d((e) => {
 		if (r) return;
 		let o = (Math.max(1, Math.min(e, a)) - 1) * t;
 		o !== n && i(o);
@@ -625,28 +625,28 @@ function Ue() {
 		isFirstPage: l,
 		isLastPage: u,
 		loading: r,
-		next: T(() => {
-			s && f(o + 1);
+		next: d(() => {
+			s && p(o + 1);
 		}, [
 			s,
 			o,
-			f
+			p
 		]),
-		previous: T(() => {
-			c && f(o - 1);
+		previous: d(() => {
+			c && p(o - 1);
 		}, [
 			c,
 			o,
-			f
+			p
 		]),
-		goToPage: f,
-		goToFirst: T(() => {
-			f(1);
-		}, [f]),
-		goToLast: T(() => {
-			f(a);
-		}, [f, a]),
-		pages: d
+		goToPage: p,
+		goToFirst: d(() => {
+			p(1);
+		}, [p]),
+		goToLast: d(() => {
+			p(a);
+		}, [p, a]),
+		pages: f
 	};
 }
 //#endregion
@@ -3769,11 +3769,11 @@ while (r === s[++i] && r === s[++i] && r === s[++i] && r === s[++i] && r === s[+
 }));
 //#endregion
 //#region src/features/documents/hooks/use-documents-download.ts
-S();
+x();
 var Qe = /* @__PURE__ */ t(Xe(), 1), $e = Ze(), et = () => {
-	let e = P($), t = I(Ge), n = I(Ke), r = P(We), i = I(We), a = P(qe), o = T((e) => {
+	let e = P($), t = I(Ge), n = I(Ke), r = P(We), i = I(We), a = P(qe), o = d((e) => {
 		e && t(e);
-	}, [t]), s = T(async () => {
+	}, [t]), s = d(async () => {
 		let t = Array.from(e).filter(Boolean);
 		if (t.length !== 0) {
 			i(!0);
@@ -3806,10 +3806,10 @@ var Qe = /* @__PURE__ */ t(Xe(), 1), $e = Ze(), et = () => {
 });
 //#endregion
 //#region src/features/documents/hooks/use-download-gate.ts
-S();
+x();
 function at(e) {
 	let [t, n] = B(tt), r = P(rt), i = P(nt), a = I(it);
-	m(() => {
+	y(() => {
 		e && n(e);
 	}, [e]);
 	function o() {
@@ -3833,12 +3833,12 @@ function at(e) {
 }
 //#endregion
 //#region src/features/documents/components/documents-results.tsx
-S();
+x();
 function ot() {
 	let { t: e } = j();
 	return /* @__PURE__ */ C("div", {
 		className: "h-[400px] text-h3 col-span-4 flex flex-col items-center",
-		children: [/* @__PURE__ */ C("p", { children: e("No Documents found") }), /* @__PURE__ */ C(w, { className: "size-30 text-gray-1" })]
+		children: [/* @__PURE__ */ C("p", { children: e("No Documents found") }), /* @__PURE__ */ C(f, { className: "size-30 text-gray-1" })]
 	});
 }
 function st({ teasers: e }) {
@@ -3885,7 +3885,7 @@ function ct() {
 	}) : null;
 }
 function lt({ children: e, linkLabel: t }) {
-	let { t: n } = j(), [r, i] = E(), a = U(i, 300), { count: o, results: s } = Pe(r), { enabled: c, requestDownload: l } = at(), { count: d, selected: f, clear: p, download: m } = et(), h = s.map((e) => be(t)(e.document));
+	let { t: n } = j(), [r, i] = b(), a = U(i, 300), { count: o, results: s } = Pe(r), { enabled: c, requestDownload: l } = at(), { count: d, selected: f, clear: p, download: m } = et(), h = s.map((e) => be(t)(e.document));
 	return /* @__PURE__ */ C("div", {
 		className: "space-y-10",
 		role: "search",
@@ -3910,7 +3910,7 @@ function lt({ children: e, linkLabel: t }) {
 								size: "icon",
 								variant: "secondary",
 								onClick: p,
-								children: [/* @__PURE__ */ C(_, { className: "size-4" }), /* @__PURE__ */ C("span", {
+								children: [/* @__PURE__ */ C(g, { className: "size-4" }), /* @__PURE__ */ C("span", {
 									className: "sr-only",
 									children: n("Clear selected documents")
 								})]
@@ -3944,11 +3944,11 @@ function lt({ children: e, linkLabel: t }) {
 }
 //#endregion
 //#region src/features/documents/components/download-dialog.tsx
-S();
+x();
 function ut({ isEnabled: e, dialogHtml: t }) {
-	let n = g(), [r, i] = E(!1), { t: a } = j(), { enabled: s, open: c, pending: d, path: f, confirm: p, cancel: m } = at(e), { download: _ } = et(), v = () => {
-		i(!1), p(), _();
-	}, y = () => {
+	let n = D(), [r, i] = b(!1), { t: a } = j(), { enabled: s, open: c, pending: d, path: f, confirm: p, cancel: m } = at(e), { download: g } = et(), _ = () => {
+		i(!1), p(), g();
+	}, v = () => {
 		i(!1), p();
 	};
 	return s ? /* @__PURE__ */ C(V, {
@@ -3985,12 +3985,12 @@ function ut({ isEnabled: e, dialogHtml: t }) {
 							href: f,
 							target: "_blank",
 							rel: "noopener noreferrer",
-							onClick: y,
+							onClick: v,
 							children: "Download"
 						}) : null,
 						d > 1 ? /* @__PURE__ */ C(u, {
 							disabled: !r,
-							onClick: v,
+							onClick: _,
 							children: ["Download", /* @__PURE__ */ C(h, { className: "size-5" })]
 						}) : null
 					]
@@ -4001,7 +4001,7 @@ function ut({ isEnabled: e, dialogHtml: t }) {
 }
 //#endregion
 //#region src/features/documents/blocks/document-center.tsx
-S();
+x();
 function dt({ documentsPromise: e, filtersConfig: t, linkLabel: n, children: r }) {
 	let i = Ee(e);
 	return /* @__PURE__ */ C(ge, {
@@ -4039,13 +4039,13 @@ function ft({ children: e }) {
 	});
 }
 function pt({ url: e, localeUrl: t, linkLabel: n, include: r, tags: i, isEnabled: a, dialogHtml: o, filtersConfig: s, ...c }) {
-	let l = D(() => Ce(e, t, { documentFilters: _e().withPaths(r).withTags(i) }), [
+	let l = T(() => Ce(e, t, { documentFilters: _e().withPaths(r).withTags(i) }), [
 		e,
 		t,
 		r,
 		i
 	]);
-	return /* @__PURE__ */ C(y, {
+	return /* @__PURE__ */ C(w, {
 		fallback: /* @__PURE__ */ C(ft, { children: /* @__PURE__ */ C(O, { ...c }) }),
 		children: [/* @__PURE__ */ C(ut, {
 			isEnabled: a,
@@ -4113,7 +4113,7 @@ function gt(e) {
 }
 async function _t(e) {
 	let t = gt(e);
-	f(e).render(/* @__PURE__ */ C(pt, { ...t }));
+	p(e).render(/* @__PURE__ */ C(pt, { ...t }));
 }
 //#endregion
 export { _t as default };

@@ -1,8 +1,8 @@
-import { t as e } from "../../scripts/parser-YLn5-Se2.js";
-import "../../scripts/utils-kL9Kd3j1.js";
-import { C as t, K as n, rt as r } from "../../scripts/react-DLNUXPF9.js";
-import { t as i } from "../../scripts/esm-BB_C1aMS.js";
-import { t as a } from "../../scripts/tag-NlcpsyaD.js";
+import { t as e } from "../../scripts/parser-Bc1VLsF3.js";
+import "../../scripts/utils-Cw5qLqcS.js";
+import { E as t, G as n, nt as r } from "../../scripts/react-w7ldCLEn.js";
+import { t as i } from "../../scripts/esm-Ccs46AP5.js";
+import { t as a } from "../../scripts/tag-CVOOa_z9.js";
 //#region src/components/article-header/article-header.tsx
 function o({ articleContent: e, dateTitle: t, date: o, tagsTitle: s, tags: c, downloadsTitle: l, downloads: u }) {
 	return /* @__PURE__ */ r("div", {

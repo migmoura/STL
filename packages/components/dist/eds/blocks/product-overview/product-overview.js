@@ -1,36 +1,36 @@
-import { i as e, l as t, o as n, u as r } from "../../scripts/parser-YLn5-Se2.js";
-import { _ as i, w as a } from "../../scripts/utils-kL9Kd3j1.js";
-import { C as o, pt as s, rt as c, xt as l } from "../../scripts/react-DLNUXPF9.js";
-import { t as u } from "../../scripts/heading-CpqtBlxR.js";
+import { i as e, l as t, o as n, u as r } from "../../scripts/parser-Bc1VLsF3.js";
+import { _ as i, w as a } from "../../scripts/utils-Cw5qLqcS.js";
+import { E as o, bt as s, ft as c, nt as l } from "../../scripts/react-w7ldCLEn.js";
+import { t as u } from "../../scripts/heading-DSowWvXd.js";
 //#region src/features/product/blocks/product-overview.tsx
-s();
-function d({ heading: e, content: t, technicalLabel: n, technicalText: r, pictures: o, ctaLink: s, secondaryCtaLink: d }) {
-	let [f, p] = l(0), m = () => {
+c();
+function d({ heading: e, content: t, technicalLabel: n, technicalText: r, pictures: o, ctaLink: c, secondaryCtaLink: d }) {
+	let [f, p] = s(0), m = () => {
 		let e = o?.[f];
 		if (e?.type === "video") {
 			let { poster: t, sources: n } = e;
-			return /* @__PURE__ */ c("video", {
+			return /* @__PURE__ */ l("video", {
 				poster: t,
 				controls: !0,
 				className: "object-cover object-center w-full aspect-3/2 max-h-[440px]",
-				children: [/* @__PURE__ */ c("track", { kind: "captions" }), n.map((e, t) => /* @__PURE__ */ c("source", {
+				children: [/* @__PURE__ */ l("track", { kind: "captions" }), n.map((e, t) => /* @__PURE__ */ l("source", {
 					src: e.src,
 					type: e.type
 				}, t))]
 			});
 		}
-		return /* @__PURE__ */ c("picture", { children: [e?.sources?.map((e) => /* @__PURE__ */ c("source", {
+		return /* @__PURE__ */ l("picture", { children: [e?.sources?.map((e) => /* @__PURE__ */ l("source", {
 			type: e.type ?? "",
 			srcSet: e.srcset ?? "",
 			media: e.media ?? ""
-		}, `icon-${e.srcset}`)), /* @__PURE__ */ c("img", {
+		}, `icon-${e.srcset}`)), /* @__PURE__ */ l("img", {
 			loading: "lazy",
 			className: "object-cover object-center w-full aspect-3/2 max-h-[440px]",
 			alt: e?.image?.alt,
 			src: e?.image?.src ?? ""
 		})] });
 	}, h = (e, t, n) => {
-		let r = /* @__PURE__ */ c("img", {
+		let r = /* @__PURE__ */ l("img", {
 			loading: "lazy",
 			className: "w-full h-full object-contain",
 			alt: e?.image?.alt,
@@ -38,60 +38,60 @@ function d({ heading: e, content: t, technicalLabel: n, technicalText: r, pictur
 		});
 		if (e?.type === "video") {
 			let { poster: t } = e;
-			r = /* @__PURE__ */ c("img", {
+			r = /* @__PURE__ */ l("img", {
 				loading: "lazy",
 				className: "h-full w-full object-contain",
 				alt: e?.image?.alt,
 				src: t ?? ""
 			});
 		}
-		return /* @__PURE__ */ c("picture", {
+		return /* @__PURE__ */ l("picture", {
 			className: a("flex flex-col w-12 md:w-24 h-12 md:h-24", { "border-b-yellow border-b-2": t === n }),
 			children: r
 		});
 	};
-	return /* @__PURE__ */ c("div", {
+	return /* @__PURE__ */ l("div", {
 		className: "grid grid-cols-1 md:grid-cols-2 px-4 md:px-20 gap-20",
-		children: [/* @__PURE__ */ c("div", { children: /* @__PURE__ */ c("div", {
+		children: [/* @__PURE__ */ l("div", { children: /* @__PURE__ */ l("div", {
 			className: "flex flex-col space-y-2",
-			children: [/* @__PURE__ */ c("div", {
+			children: [/* @__PURE__ */ l("div", {
 				className: "w-full h-full",
 				children: m()
-			}), /* @__PURE__ */ c("div", {
+			}), /* @__PURE__ */ l("div", {
 				className: "flex gap-2 mx-auto",
-				children: o?.map((e, t) => /* @__PURE__ */ c("button", {
+				children: o?.map((e, t) => /* @__PURE__ */ l("button", {
 					onClick: () => p(t),
 					children: h(e, t, f)
 				}, t))
 			})]
-		}) }), /* @__PURE__ */ c("div", { children: /* @__PURE__ */ c("div", {
+		}) }), /* @__PURE__ */ l("div", { children: /* @__PURE__ */ l("div", {
 			className: "flex flex-col space-y-10",
 			children: [
-				/* @__PURE__ */ c(u, {
+				/* @__PURE__ */ l(u, {
 					...e,
 					children: e?.value
 				}),
-				/* @__PURE__ */ c("div", {
+				/* @__PURE__ */ l("div", {
 					className: "prose text-justify text-gray-1",
 					dangerouslySetInnerHTML: { __html: t ?? "" }
 				}),
-				/* @__PURE__ */ c("h5", {
+				/* @__PURE__ */ l("h5", {
 					className: "text-h5 font-bold leading-7 text-gray-1",
 					children: n
 				}),
-				/* @__PURE__ */ c("div", {
+				/* @__PURE__ */ l("div", {
 					dangerouslySetInnerHTML: { __html: r ?? "" },
 					className: "[&>ul]:list-disc [&>ul]:list-inside [&>ul]:columns-2 [&>ul]:space-y-2 text-start text-gray-1 "
 				}),
-				/* @__PURE__ */ c("div", {
+				/* @__PURE__ */ l("div", {
 					className: "flex flex-row gap-4",
-					children: [s?.link && /* @__PURE__ */ c(i, {
-						href: s.link.href,
-						title: s.link.title,
+					children: [c?.link && /* @__PURE__ */ l(i, {
+						href: c.link.href,
+						title: c.link.title,
 						className: "w-full",
 						variant: "primary",
-						children: s.link.title
-					}), d?.link && /* @__PURE__ */ c(i, {
+						children: c.link.title
+					}), d?.link && /* @__PURE__ */ l(i, {
 						href: d.link.href,
 						title: d.link.title,
 						className: "w-full",
@@ -119,7 +119,7 @@ function f(i) {
 }
 function p(e) {
 	let t = f(e);
-	o(e).render(/* @__PURE__ */ c(d, { ...t }));
+	o(e).render(/* @__PURE__ */ l(d, { ...t }));
 }
 //#endregion
 export { p as default };

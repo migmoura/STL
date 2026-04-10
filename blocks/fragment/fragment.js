@@ -1,50 +1,24 @@
-/*
- * Fragment Block
- * Include content on a page as a fragment.
- * https://www.aem.live/developer/block-collection/fragment
- */
-
-// eslint-disable-next-line import/no-cycle
-import {
-  decorateMain,
-} from '../../scripts/scripts.js';
-
-import {
-  loadSections,
-} from '../../scripts/aem.js';
-
-/**
- * Loads a fragment.
- * @param {string} path The path to the fragment
- * @returns {HTMLElement} The root element of the fragment
- */
-export async function loadFragment(path) {
-  if (path && path.startsWith('/') && !path.startsWith('//')) {
-    const resp = await fetch(`${path}.plain.html`);
-    if (resp.ok) {
-      const main = document.createElement('main');
-      main.innerHTML = await resp.text();
-
-      // reset base path for media to fragment base
-      const resetAttributeBase = (tag, attr) => {
-        main.querySelectorAll(`${tag}[${attr}^="./media_"]`).forEach((elem) => {
-          elem[attr] = new URL(elem.getAttribute(attr), new URL(path, window.location)).href;
-        });
-      };
-      resetAttributeBase('img', 'src');
-      resetAttributeBase('source', 'srcset');
-
-      decorateMain(main);
-      await loadSections(main);
-      return main;
-    }
-  }
-  return null;
+import { decorateMain as e } from "/Users/miguelmoura/Desktop/AEM EDS/STL/scripts/scripts.js";
+import { loadSections as t } from "/Users/miguelmoura/Desktop/AEM EDS/STL/scripts/aem.js";
+//#region src/blocks/fragment/fragment.tsx
+async function n(n) {
+	if (!n || !n.startsWith("/") || n.startsWith("//")) return null;
+	let r = await fetch(`${n}.plain.html`);
+	if (!r.ok) return null;
+	let i = document.createElement("main");
+	i.innerHTML = await r.text();
+	let a = (e, t) => {
+		i.querySelectorAll(`${e}[${t}^="./media_"]`).forEach((e) => {
+			e[t] = new URL(e.getAttribute(t), new URL(n, window.location.href)).href;
+		});
+	};
+	return a("img", "src"), a("source", "srcset"), e(i), await t(i), i;
 }
-
-export default async function decorate(block) {
-  const link = block.querySelector('a');
-  const path = link ? link.getAttribute('href') : block.textContent.trim();
-  const fragment = await loadFragment(path);
-  if (fragment) block.replaceChildren(...fragment.childNodes);
+async function r(e) {
+	let t = e.querySelector("a"), r = t ? t.getAttribute("href") : e.textContent?.trim();
+	if (!r) return;
+	let i = await n(r);
+	i && e.replaceChildren(...i.childNodes);
 }
+//#endregion
+export { r as default, n as loadFragment };

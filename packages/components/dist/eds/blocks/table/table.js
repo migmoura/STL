@@ -1,10 +1,10 @@
-import { h as e, s as t, u as n } from "../../scripts/parser-YLn5-Se2.js";
-import "../../scripts/utils-kL9Kd3j1.js";
-import { C as r, Ot as i, nt as a, pt as o, rt as s, tt as c, xt as l } from "../../scripts/react-DLNUXPF9.js";
-import "../../scripts/heading-CpqtBlxR.js";
-import { t as u } from "../../scripts/headline-1Uwx5fu-.js";
+import { h as e, s as t, u as n } from "../../scripts/parser-Bc1VLsF3.js";
+import "../../scripts/utils-Cw5qLqcS.js";
+import { Dt as r, E as i, bt as a, et as o, ft as s, nt as c, tt as l } from "../../scripts/react-w7ldCLEn.js";
+import "../../scripts/heading-DSowWvXd.js";
+import { t as u } from "../../scripts/headline-CM_nM-LL.js";
 //#region ../../node_modules/.pnpm/@tanstack+table-core@8.21.3/node_modules/@tanstack/table-core/build/lib/index.mjs
-o();
+s();
 function d(e, t) {
 	return typeof e == "function" ? e(t) : e;
 }
@@ -1370,7 +1370,7 @@ function Ae() {
 //#endregion
 //#region ../../node_modules/.pnpm/@tanstack+react-table@8.21.3_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/@tanstack/react-table/build/lib/index.mjs
 function Q(e, t) {
-	return e ? je(e) ? /* @__PURE__ */ i(e, t) : e : null;
+	return e ? je(e) ? /* @__PURE__ */ r(e, t) : e : null;
 }
 function je(e) {
 	return Me(e) || typeof e == "function" || Ne(e);
@@ -1390,7 +1390,7 @@ function Pe(e) {
 		onStateChange: () => {},
 		renderFallbackValue: null,
 		...e
-	}, [n] = l(() => ({ current: Oe(t) })), [r, i] = l(() => n.current.initialState);
+	}, [n] = a(() => ({ current: Oe(t) })), [r, i] = a(() => n.current.initialState);
 	return n.current.setOptions((t) => ({
 		...t,
 		...e,
@@ -1405,12 +1405,12 @@ function Pe(e) {
 }
 //#endregion
 //#region src/components/ui/table.tsx
-o();
+s();
 function Fe({ className: e, ...t }) {
-	return /* @__PURE__ */ s("div", {
+	return /* @__PURE__ */ c("div", {
 		"data-slot": "table-container",
 		className: "relative w-full overflow-x-auto",
-		children: /* @__PURE__ */ s("table", {
+		children: /* @__PURE__ */ c("table", {
 			"data-slot": "table",
 			className: e,
 			...t
@@ -1418,35 +1418,35 @@ function Fe({ className: e, ...t }) {
 	});
 }
 function Ie({ className: e, ...t }) {
-	return /* @__PURE__ */ s("thead", {
+	return /* @__PURE__ */ c("thead", {
 		"data-slot": "table-header",
 		className: e,
 		...t
 	});
 }
 function Le({ className: e, ...t }) {
-	return /* @__PURE__ */ s("tbody", {
+	return /* @__PURE__ */ c("tbody", {
 		"data-slot": "table-body",
 		className: e,
 		...t
 	});
 }
 function $({ className: e, ...t }) {
-	return /* @__PURE__ */ s("tr", {
+	return /* @__PURE__ */ c("tr", {
 		"data-slot": "table-row",
 		className: e,
 		...t
 	});
 }
 function Re({ className: e, ...t }) {
-	return /* @__PURE__ */ s("th", {
+	return /* @__PURE__ */ c("th", {
 		"data-slot": "table-head",
 		className: e,
 		...t
 	});
 }
 function ze({ className: e, ...t }) {
-	return /* @__PURE__ */ s("td", {
+	return /* @__PURE__ */ c("td", {
 		"data-slot": "table-cell",
 		className: e,
 		...t
@@ -1454,9 +1454,9 @@ function ze({ className: e, ...t }) {
 }
 //#endregion
 //#region src/components/data-table/data-table.tsx
-o();
+s();
 function Be({ columns: e, data: t, ...n }) {
-	let [r, i] = l([]), a = Pe({
+	let [r, i] = a([]), o = Pe({
 		data: t,
 		columns: e,
 		getCoreRowModel: ke(),
@@ -1464,12 +1464,12 @@ function Be({ columns: e, data: t, ...n }) {
 		getSortedRowModel: Ae(),
 		state: { sorting: r }
 	});
-	return /* @__PURE__ */ s("div", {
+	return /* @__PURE__ */ c("div", {
 		className: "space-y-20 jus",
-		children: [/* @__PURE__ */ s(u, { ...n }), /* @__PURE__ */ s(Fe, { children: [/* @__PURE__ */ s(Ie, { children: a.getHeaderGroups().map((e) => /* @__PURE__ */ s($, { children: e.headers.map((e) => /* @__PURE__ */ s(Re, { children: e.isPlaceholder ? null : Q(e.column.columnDef.header, e.getContext()) }, e.id)) }, e.id)) }), /* @__PURE__ */ s(Le, { children: a.getRowModel().rows?.length ? a.getRowModel().rows.map((e) => /* @__PURE__ */ s($, {
+		children: [/* @__PURE__ */ c(u, { ...n }), /* @__PURE__ */ c(Fe, { children: [/* @__PURE__ */ c(Ie, { children: o.getHeaderGroups().map((e) => /* @__PURE__ */ c($, { children: e.headers.map((e) => /* @__PURE__ */ c(Re, { children: e.isPlaceholder ? null : Q(e.column.columnDef.header, e.getContext()) }, e.id)) }, e.id)) }), /* @__PURE__ */ c(Le, { children: o.getRowModel().rows?.length ? o.getRowModel().rows.map((e) => /* @__PURE__ */ c($, {
 			"data-state": e.getIsSelected() && "selected",
-			children: e.getVisibleCells().map((e) => /* @__PURE__ */ s(ze, { children: Q(e.column.columnDef.cell, e.getContext()) }, e.id))
-		}, e.id)) : /* @__PURE__ */ s($, { children: /* @__PURE__ */ s(ze, {
+			children: e.getVisibleCells().map((e) => /* @__PURE__ */ c(ze, { children: Q(e.column.columnDef.cell, e.getContext()) }, e.id))
+		}, e.id)) : /* @__PURE__ */ c($, { children: /* @__PURE__ */ c(ze, {
 			colSpan: e.length,
 			children: "No results."
 		}) }) })] })]
@@ -1478,23 +1478,23 @@ function Be({ columns: e, data: t, ...n }) {
 //#endregion
 //#region src/blocks/table/table.tsx
 async function Ve(r) {
-	let [i, o, l, ...u] = Array.from(r.children), [d, ...f] = Array.from(u), p = Array.from(d.children).map((t, n) => ({
+	let [i, a, s, ...u] = Array.from(r.children), [d, ...f] = Array.from(u), p = Array.from(d.children).map((t, n) => ({
 		accessorKey: e(t.textContent)?.split(" ").join("_").replace(/[^\w\s]/gi, "_").toLowerCase() || `${n}`,
-		header: ({ column: n }) => /* @__PURE__ */ s("button", {
+		header: ({ column: n }) => /* @__PURE__ */ c("button", {
 			className: "flex items-center cursor-pointer gap-2",
 			onClick: () => n.toggleSorting(),
-			children: [e(t.textContent), n.getIsSorted() ? n.getIsSorted() === "asc" ? /* @__PURE__ */ s(a, { className: "size-4 shrink-0" }) : /* @__PURE__ */ s(c, { className: "size-4 shrink-0" }) : null]
+			children: [e(t.textContent), n.getIsSorted() ? n.getIsSorted() === "asc" ? /* @__PURE__ */ c(l, { className: "size-4 shrink-0" }) : /* @__PURE__ */ c(o, { className: "size-4 shrink-0" }) : null]
 		})
 	})), m = f.map((e) => Array.from(e.children).reduce((e, t, r) => (e[p[r].accessorKey] = n(t.textContent), e), {}));
 	return {
-		...t(i.querySelector("h1, h2, h3, h4, h5, h6"), o.textContent, l.querySelector("a")),
+		...t(i.querySelector("h1, h2, h3, h4, h5, h6"), a.textContent, s.querySelector("a")),
 		columns: p,
 		data: m
 	};
 }
 async function He(e) {
 	let t = await Ve(e);
-	r(e).render(/* @__PURE__ */ s(Be, { ...t }));
+	i(e).render(/* @__PURE__ */ c(Be, { ...t }));
 }
 //#endregion
 export { He as default };

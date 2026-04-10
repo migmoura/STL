@@ -1,7 +1,7 @@
-import { f as e, t, u as n } from "../../scripts/parser-YLn5-Se2.js";
-import { r } from "../../scripts/utils-kL9Kd3j1.js";
-import { C as i, rt as a } from "../../scripts/react-DLNUXPF9.js";
-import { t as o } from "../../scripts/picture-DXSbVeQF.js";
+import { f as e, t, u as n } from "../../scripts/parser-Bc1VLsF3.js";
+import { r } from "../../scripts/utils-Cw5qLqcS.js";
+import { E as i, nt as a } from "../../scripts/react-w7ldCLEn.js";
+import { t as o } from "../../scripts/picture-DtJCwEBx.js";
 //#region src/features/content/simple-blocks/simple-image.tsx
 function s({ watermark: e, children: t, ...n }) {
 	return /* @__PURE__ */ a("div", {

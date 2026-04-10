@@ -1,15 +1,15 @@
-import { m as e, s as t } from "../../scripts/parser-YLn5-Se2.js";
-import "../../scripts/utils-kL9Kd3j1.js";
-import { C as n, rt as r } from "../../scripts/react-DLNUXPF9.js";
-import "../../scripts/heading-CpqtBlxR.js";
-import { t as i } from "../../scripts/headline-1Uwx5fu-.js";
-import "../../scripts/esm-BB_C1aMS.js";
-import "../../scripts/tag-NlcpsyaD.js";
-import { n as a, r as o, t as s } from "../../scripts/carousel-_PEDPEI0.js";
-import "../../scripts/picture-DXSbVeQF.js";
-import "../../scripts/skeleton-B-n3kDr5.js";
-import { n as c } from "../../scripts/teaser-C41I5SfI.js";
-import { t as l } from "../../scripts/embla-carousel-wheel-gestures.esm-C-pp_2FN.js";
+import { m as e, s as t } from "../../scripts/parser-Bc1VLsF3.js";
+import "../../scripts/utils-Cw5qLqcS.js";
+import { E as n, nt as r } from "../../scripts/react-w7ldCLEn.js";
+import "../../scripts/heading-DSowWvXd.js";
+import { t as i } from "../../scripts/headline-CM_nM-LL.js";
+import "../../scripts/esm-Ccs46AP5.js";
+import "../../scripts/tag-CVOOa_z9.js";
+import { n as a, r as o, t as s } from "../../scripts/carousel-B0Q74k9z.js";
+import "../../scripts/picture-DtJCwEBx.js";
+import "../../scripts/skeleton-amY4T5vv.js";
+import { n as c } from "../../scripts/teaser-BSOk0Trv.js";
+import { t as l } from "../../scripts/embla-carousel-wheel-gestures.esm-BsjAoK7B.js";
 //#region src/features/content/blocks/simple-teaser.tsx
 function u({ aspectRatio: e = "aspect-2/1", items: t, ...n }) {
 	return /* @__PURE__ */ r("div", {

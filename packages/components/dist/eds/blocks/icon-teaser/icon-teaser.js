@@ -1,9 +1,9 @@
-import { c as e, s as t } from "../../scripts/parser-YLn5-Se2.js";
-import { m as n } from "../../scripts/utils-kL9Kd3j1.js";
-import { C as r, rt as i } from "../../scripts/react-DLNUXPF9.js";
-import "../../scripts/heading-CpqtBlxR.js";
-import { t as a } from "../../scripts/headline-1Uwx5fu-.js";
-import { t as o } from "../../scripts/esm-BB_C1aMS.js";
+import { c as e, s as t } from "../../scripts/parser-Bc1VLsF3.js";
+import { m as n } from "../../scripts/utils-Cw5qLqcS.js";
+import { E as r, nt as i } from "../../scripts/react-w7ldCLEn.js";
+import "../../scripts/heading-DSowWvXd.js";
+import { t as a } from "../../scripts/headline-CM_nM-LL.js";
+import { t as o } from "../../scripts/esm-Ccs46AP5.js";
 //#region src/components/icon-teaser/icon-teaser-item.tsx
 function s({ item: e }) {
 	return /* @__PURE__ */ i("div", {

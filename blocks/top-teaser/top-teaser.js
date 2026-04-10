@@ -1,37 +1,37 @@
-import { f as e, g as t, o as n, t as r, u as i } from "../../scripts/parser-YLn5-Se2.js";
-import { _ as a, w as o } from "../../scripts/utils-kL9Kd3j1.js";
-import { C as s, Et as c, pt as l, rt as u, xt as d } from "../../scripts/react-DLNUXPF9.js";
-import { t as f } from "../../scripts/heading-CpqtBlxR.js";
-import { n as p, r as m, t as h } from "../../scripts/carousel-_PEDPEI0.js";
-import { t as g } from "../../scripts/picture-DXSbVeQF.js";
-import { t as _ } from "../../scripts/carousel-pagination-D15HvGIf.js";
+import { f as e, g as t, o as n, t as r, u as i } from "../../scripts/parser-Bc1VLsF3.js";
+import { _ as a, w as o } from "../../scripts/utils-Cw5qLqcS.js";
+import { E as s, Tt as c, bt as l, ft as u, nt as d } from "../../scripts/react-w7ldCLEn.js";
+import { t as f } from "../../scripts/heading-DSowWvXd.js";
+import { n as p, r as m, t as h } from "../../scripts/carousel-B0Q74k9z.js";
+import { t as g } from "../../scripts/picture-DtJCwEBx.js";
+import { t as _ } from "../../scripts/carousel-pagination-BAi4RXjZ.js";
 //#region src/features/content/components/top-teaser-item.tsx
-l();
+u();
 function v({ heading: e, eyebrow: t, ctaButton: n, secondaryCtaButton: r, opacity: i = !0, children: s }) {
-	return /* @__PURE__ */ u("div", {
+	return /* @__PURE__ */ d("div", {
 		className: "grid grid-areas-stack items-end",
 		children: [
 			s,
-			/* @__PURE__ */ u("div", { className: o("area-stack size-full", i ? "bg-linear-to-t from-transparent to-black/90" : "") }),
-			/* @__PURE__ */ u("div", {
+			/* @__PURE__ */ d("div", { className: o("area-stack size-full", i ? "bg-linear-to-t from-transparent to-black/90" : "") }),
+			/* @__PURE__ */ d("div", {
 				className: "fluid py-14 area-stack size-full grid 2xl:grid-cols-2",
-				children: /* @__PURE__ */ u("div", {
+				children: /* @__PURE__ */ d("div", {
 					className: "flex flex-col md:justify-center gap-5 md:gap-8 text-white md:col-span-2 2xl:col-span-1",
 					children: [
-						t ? /* @__PURE__ */ u("p", { children: t }) : null,
-						/* @__PURE__ */ u(f, {
+						t ? /* @__PURE__ */ d("p", { children: t }) : null,
+						/* @__PURE__ */ d(f, {
 							...e,
 							display: !0,
 							className: "line-clamp-4 md:line-clamp-2",
 							children: e.value
 						}),
-						/* @__PURE__ */ u("div", {
+						/* @__PURE__ */ d("div", {
 							className: "flex gap-4",
-							children: [n && /* @__PURE__ */ u(a, {
+							children: [n && /* @__PURE__ */ d(a, {
 								...n.link,
 								variant: "primary",
 								children: n.link?.value
-							}, n.link?.href), r && /* @__PURE__ */ u(a, {
+							}, n.link?.href), r && /* @__PURE__ */ d(a, {
 								...r.link,
 								variant: "secondary",
 								children: r.link?.value
@@ -49,7 +49,7 @@ var y = /* @__PURE__ */ function(e) {
 	return e.PRIMARY = "primary", e.SECONDARY = "secondary", e;
 }({}), b = "gradient";
 function x({ items: e, variant: t = y.PRIMARY, opacity: n }) {
-	let [r, i] = d(), [a, s] = d(0);
+	let [r, i] = l(), [a, s] = l(0);
 	return c(() => {
 		if (!r) return;
 		let e = () => {
@@ -58,7 +58,7 @@ function x({ items: e, variant: t = y.PRIMARY, opacity: n }) {
 		return r.on("select", e), s(r.selectedScrollSnap()), () => {
 			r.off("select", e);
 		};
-	}, [r]), /* @__PURE__ */ u(h, {
+	}, [r]), /* @__PURE__ */ d(h, {
 		opts: {
 			loop: !0,
 			watchDrag: (e, t) => !t.target.closest("h1, h2, p"),
@@ -67,17 +67,17 @@ function x({ items: e, variant: t = y.PRIMARY, opacity: n }) {
 		"aria-label": "Top Teaser - Slider",
 		setApi: i,
 		className: o("grid align-bottom grid-areas-stack", { "min-h-96": t === y.SECONDARY }),
-		children: [/* @__PURE__ */ u("div", {
+		children: [/* @__PURE__ */ d("div", {
 			className: "area-stack overflow-hidden",
-			children: /* @__PURE__ */ u(p, {
+			children: /* @__PURE__ */ d(p, {
 				className: "ml-0!",
-				children: e.map((e) => /* @__PURE__ */ u(m, {
+				children: e.map((e) => /* @__PURE__ */ d(m, {
 					className: "pl-0!",
-					children: /* @__PURE__ */ u(v, {
+					children: /* @__PURE__ */ d(v, {
 						...e,
 						eyebrow: t === y.SECONDARY ? void 0 : e.eyebrow,
 						opacity: n,
-						children: e.image ? /* @__PURE__ */ u(g, {
+						children: e.image ? /* @__PURE__ */ d(g, {
 							className: "area-stack",
 							imageClassName: o("w-lvw object-cover", { "h-[calc(100dvh-179px)] md:max-h-[486px] lg:max-h-[912px]": t === y.PRIMARY }, { "h-[calc(100dvh-179px)] max-h-[424px]": t === y.SECONDARY }),
 							...e.image
@@ -85,9 +85,9 @@ function x({ items: e, variant: t = y.PRIMARY, opacity: n }) {
 					}, e.heading.value)
 				}, e.heading.value))
 			})
-		}), e.length > 1 ? /* @__PURE__ */ u("div", {
+		}), e.length > 1 ? /* @__PURE__ */ d("div", {
 			className: "area-stack h-fit z-10 md:px-8 py-8 md:py-16 flex self-end justify-center md:justify-end lg:justify-center",
-			children: /* @__PURE__ */ u(_, {
+			children: /* @__PURE__ */ d(_, {
 				inverted: !0,
 				current: a,
 				total: e.length,
@@ -123,7 +123,7 @@ function C(e) {
 }
 function w(e) {
 	let { items: t, variant: n, opacity: r } = C(e);
-	s(e).render(/* @__PURE__ */ u(x, {
+	s(e).render(/* @__PURE__ */ d(x, {
 		items: t,
 		variant: n,
 		opacity: r

@@ -1,5 +1,5 @@
-import { r as e } from "../../scripts/utils-kL9Kd3j1.js";
-import { C as t, rt as n } from "../../scripts/react-DLNUXPF9.js";
+import { r as e } from "../../scripts/utils-Cw5qLqcS.js";
+import { E as t, nt as n } from "../../scripts/react-w7ldCLEn.js";
 //#region src/components/social-media/social-media.tsx
 function r({ ...t }) {
 	return /* @__PURE__ */ n("div", {

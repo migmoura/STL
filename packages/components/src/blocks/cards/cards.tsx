@@ -1,23 +1,23 @@
 import { createRoot } from "react-dom/client";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card.tsx";
-import { Button } from "@/components/ui/button.tsx";
+import { DSLinkCard } from "@stihl-design-system/components";
+import { parseString } from "@/lib/parser.ts";
 
 export default function decorate(block: HTMLElement) {
   const [titleWrapper, contentWrapper, ctaWrapper] = block.children;
-  const title = titleWrapper.textContent?.trim();
-  const content = contentWrapper.textContent?.trim();
-  const cta = ctaWrapper.textContent?.trim();
+
+  const title = parseString(titleWrapper?.textContent);
+  const content = parseString(contentWrapper?.textContent);
+  const anchor = ctaWrapper?.querySelector("a");
+  const ctaLabel = parseString(anchor?.textContent);
+  const href = anchor?.href;
 
   const root = createRoot(block);
   root.render(
-    <Card>
-      <CardHeader>
-        <CardTitle>{title}</CardTitle>
-      </CardHeader>
-      <CardContent>{content}</CardContent>
-      <CardFooter>
-        <Button>{cta}</Button>
-      </CardFooter>
-    </Card>,
+    <DSLinkCard
+      heading={title ?? ""}
+      description={content}
+      href={href}
+      decorativeLinkButtonProps={ctaLabel ? { label: ctaLabel } : undefined}
+    />,
   );
 }
