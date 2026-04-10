@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>STIHL TIMBERSPORTS® – Home</title>
+</head>
+<body>
+<main>
+
+<!--
+  ╔══════════════════════════════════════════════════════════════════════╗
+  ║  STIHL TIMBERSPORTS® – Homepage Draft                               ║
+  ║  Source: https://www.stihl-timbersports.com/de                      ║
+  ║  Section order mirrors the original page top → bottom               ║
+  ╚══════════════════════════════════════════════════════════════════════╝
+
+  DA Live table → EDS block mapping:
+  ─────────────────────────────────────────────────────────────────────
+  heroslider          → top-teaser (use-gradient)    [2 slides]
+  3× eventcard        → event-card                   [3 cards in grid]
+  video               → video
+  3× contentcard      → cards                        [3 content cards]
+  tsrecommendedarticle→ gallery-teaser
+  textimage           → text-image (image-right)
+  imageseparator      → image
+  highlightteaserbar  → big-image-teaser
+  sponsors            → logo-slider
+  ─────────────────────────────────────────────────────────────────────
+-->
+
+<!-- ═══════════════════════════════════════════════════════════════════
+  SECTION 1 – HERO SLIDER (top-teaser)
+
+  DA Live table:
+  ┌──────────────────────────────────────────────────────────────────┐
+  │ top-teaser (use-gradient)                                        │
+  ├──────────────────┬──────────────┬──────────────┬─────────────────┤
+  │ [slide 1 image]  │ (no eyebrow) │ Weltmeister- │ Jetzt Tickets  │
+  │                  │              │ schaften 2026│ kaufen!        │
+  ├──────────────────┼──────────────┼──────────────┼─────────────────┤
+  │ [slide 2 image]  │ (no eyebrow) │ (no heading) │ (no CTA)       │
+  └──────────────────┴──────────────┴──────────────┴─────────────────┘
+  Each row = 1 slide: [image] | [eyebrow] | [h1/h2] | [primary CTA] | [secondary CTA]
+══════════════════════════════════════════════════════════════════════ -->
+<div>
+  <div class="top-teaser use-gradient">
+    <!-- Slide 1 – Weltmeisterschaften 2026 -->
+    <div>
+      <div>
+        <picture>
+          <img
+            src="https://www.stihl-timbersports.com/content/dam/timbersports/athletepages/Timbersports_WCH24_Jordan_PP_1254.jpg"
+            alt="Willkommen bei STIHL TIMBERSPORTS®"
+          />
+        </picture>
+      </div>
+      <div></div>
+      <div><h1>Weltmeisterschaften 2026</h1></div>
+      <div>
+        <a href="https://www.easyticket.de/veranstaltung/stihl-timbersports-individual-world-championship-2026/103966">
+          Jetzt Tickets kaufen!
+        </a>
+      </div>
+      <div></div>
+    </div>
+    <!-- Slide 2 – 40 Jahre STIHL TIMBERSPORTS® -->
+    <div>
+      <div>
+        <picture>
+          <img
+            src="https://www.stihl-timbersports.com/content/dam/timbersports/home-and-hubs/40years_Welcome.jpg"
+            alt="Willkommen zu 40 Jahre von STIHL TIMBERSPORTS®"
+          />
+        </picture>
+      </div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════
+  SECTION 2 – EVENT CARDS (3×)
+
+  In DA Live, create 3 separate "event-card" tables side by side.
+  Each table = one event. The section CSS will render them as a 3-col grid.
+
+  DA Live table (repeat 3×):
+  ┌─────────────────────────────────────────────┐
+  │ event-card                                  │
+  ├─────────────────────────────────────────────┤
+  │ [event image]                               │
+  ├─────────────────────────────────────────────┤
+  │ Event Name                                  │
+  ├─────────────────────────────────────────────┤
+  │ 25 Okt 2025                                 │
+  ├─────────────────────────────────────────────┤
+  │ Milan, Italy                                │
+  ├─────────────────────────────────────────────┤
+  │ VIDEO ON DEMAND                             │  ← status badge
+  ├─────────────────────────────────────────────┤
+  │ [link to event page]                        │
+  └─────────────────────────────────────────────┘
+══════════════════════════════════════════════════════════════════════ -->
+
+<!-- Event Card 1 – Individual World Championship 2025 -->
+<div>
+  <div class="event-card">
+    <div><div>
+      <picture>
+        <img
+          src="https://www.stihl-timbersports.com/content/dam/timbersports/events/card/2025/2336.jpeg"
+          alt="Individual World Championship 2025"
+        />
+      </picture>
+    </div></div>
+    <div><div>Individual World Championship 2025</div></div>
+    <div><div>25 Okt 2025</div></div>
+    <div><div>Milan, Italien</div></div>
+    <div><div>VIDEO ON DEMAND</div></div>
+    <div><div><a href="/de/events/individual-world-championship-2025">Mehr erfahren</a></div></div>
+  </div>
+</div>
+
+<!-- Event Card 2 – Team World Championship 2025 -->
+<div>
+  <div class="event-card">
+    <div><div>
+      <picture>
+        <img
+          src="https://www.stihl-timbersports.com/content/dam/timbersports/events/card/2025/2337.jpeg"
+          alt="Team World Championship 2025"
+        />
+      </picture>
+    </div></div>
+    <div><div>Team World Championship 2025</div></div>
+    <div><div>01 Nov 2025</div></div>
+    <div><div>Oslo, Norwegen</div></div>
+    <div><div>UPCOMING</div></div>
+    <div><div><a href="/de/events/team-world-championship-2025">Mehr erfahren</a></div></div>
+  </div>
+</div>
+
+<!-- Event Card 3 – European Championship 2025 -->
+<div>
+  <div class="event-card">
+    <div><div>
+      <picture>
+        <img
+          src="https://www.stihl-timbersports.com/content/dam/timbersports/events/card/2025/2378.jpeg"
+          alt="European Championship 2025"
+        />
+      </picture>
+    </div></div>
+    <div><div>European Championship 2025</div></div>
+    <div><div>14 Jun 2025</div></div>
+    <div><div>Wien, Österreich</div></div>
+    <div><div>VIDEO ON DEMAND</div></div>
+    <div><div><a href="/de/events/european-championship-2025">Mehr erfahren</a></div></div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════
+  SECTION 3 – VIDEO
+
+  DA Live table:
+  ┌─────────────────────────────────────────────┐
+  │ video                                       │
+  ├─────────────────────────────────────────────┤
+  │ Entdecke alle Höhepunkte                    │  ← h2 headline
+  ├─────────────────────────────────────────────┤
+  │ [YouTube channel link]                      │  ← video URL
+  ├─────────────────────────────────────────────┤
+  │ [CTA link] (optional)                       │
+  └─────────────────────────────────────────────┘
+══════════════════════════════════════════════════════════════════════ -->
+<div>
+  <div class="video">
+    <div><div><h2>Entdecke alle Höhepunkte</h2></div></div>
+    <div><div>
+      <a href="https://www.youtube.com/@STIHLTIMBERSPORTS">
+        STIHL TIMBERSPORTS® auf YouTube
+      </a>
+    </div></div>
+    <div><div></div></div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════
+  SECTION 4 – CONTENT CARDS (3×)
+
+  In DA Live, create 3 "cards" tables side by side in the same section.
+
+  DA Live table (repeat 3×):
+  ┌─────────────────────────────────────────────┐
+  │ cards                                       │
+  ├─────────────────────────────────────────────┤
+  │ Card Title                                  │
+  ├─────────────────────────────────────────────┤
+  │ Short description text                      │
+  ├─────────────────────────────────────────────┤
+  │ [CTA link]                                  │
+  └─────────────────────────────────────────────┘
+══════════════════════════════════════════════════════════════════════ -->
+
+<!-- Content Card 1 – News -->
+<div>
+  <div class="cards">
+    <div><div>Aktuelle Nachrichten</div></div>
+    <div><div>
+      Bleibe auf dem Laufenden mit den neuesten Ergebnissen, Athletenprofilen und Hintergrundgeschichten aus der Welt des STIHL TIMBERSPORTS®.
+    </div></div>
+    <div><div><a href="/de/news">Alle Nachrichten</a></div></div>
+  </div>
+</div>
+
+<!-- Content Card 2 – Events -->
+<div>
+  <div class="cards">
+    <div><div>Kommende Events</div></div>
+    <div><div>
+      Erlebe die Spannung live! Entdecke alle bevorstehenden Wettkämpfe und sichere dir deine Tickets für die nächste große Veranstaltung.
+    </div></div>
+    <div><div><a href="/de/events">Alle Events</a></div></div>
+  </div>
+</div>
+
+<!-- Content Card 3 – Athletes -->
+<div>
+  <div class="cards">
+    <div><div>Unsere Athleten</div></div>
+    <div><div>
+      Lerne die stärksten Holzfäller der Welt kennen. Athletenprofile, Statistiken und exklusive Einblicke hinter die Kulissen des Profisports.
+    </div></div>
+    <div><div><a href="/de/sport/top-athleten">Alle Athleten</a></div></div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════
+  SECTION 5 – RECOMMENDED ARTICLES (gallery-teaser)
+
+  DA Live table:
+  ┌──────────────────────────────────────────────────────────────────┐
+  │ gallery-teaser                                                   │
+  ├──────────────────────────────────────────────────────────────────┤
+  │ Empfohlene Artikel                                               │  ← h2
+  ├──────────────────────────────────────────────────────────────────┤
+  │ Weitere Inhalte, die dich interessieren könnten                  │  ← subheadline
+  ├──────────────────────────────────────────────────────────────────┤
+  │ [Alle Artikel link]                                              │  ← link
+  ├───────────────┬──────────────┬───────────────┬───────────────────┤
+  │ [image]       │ Title        │ Description   │ [link]            │  ← item ×N
+  └───────────────┴──────────────┴───────────────┴───────────────────┘
+══════════════════════════════════════════════════════════════════════ -->
+<div>
+  <div class="gallery-teaser">
+    <div><div><h2>Das könnte dich auch interessieren</h2></div></div>
+    <div><div></div></div>
+    <div><div><a href="/de/news">Alle Nachrichten durchsuchen</a></div></div>
+    <div>
+      <div><picture><img src="https://www.stihl-timbersports.com/content/dam/timbersports/athletepages/Timbersports_WCH24_Jordan_PP_1254.jpg" alt="Weltmeister 2024" /></picture></div>
+      <div>Weltmeister 2024 – Ein Rückblick</div>
+      <div>Die besten Momente der Individual World Championship 2024 in der Zusammenfassung.</div>
+      <div><a href="/de/news/wm-2024-rueckblick">Jetzt lesen</a></div>
+    </div>
+    <div>
+      <div><picture><img src="https://www.stihl-timbersports.com/content/dam/timbersports/home-and-hubs/40years_Welcome.jpg" alt="40 Jahre TIMBERSPORTS" /></picture></div>
+      <div>40 Jahre STIHL TIMBERSPORTS®</div>
+      <div>Vier Jahrzehnte voller Leidenschaft, Kraft und unvergesslicher Wettkämpfe.</div>
+      <div><a href="/de/news/40-jahre-timbersports">Geschichte entdecken</a></div>
+    </div>
+    <div>
+      <div><picture><img src="https://www.stihl-timbersports.com/content/dam/timbersports/home-and-hubs/Timbersports_WCH24_Setup_DA_0264.jpg" alt="Disziplinen" /></picture></div>
+      <div>Die 6 klassischen Disziplinen</div>
+      <div>Von Standing Block Chop bis Hot Saw – alles, was du über die TIMBERSPORTS®-Disziplinen wissen musst.</div>
+      <div><a href="/de/sport/disziplinen">Mehr erfahren</a></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════
+  SECTION 6 – TEXT + IMAGE (text-image)
+
+  DA Live table:
+  ┌────────────────────────────────────────────────────────────────────┐
+  │ text-image (image-right)                                           │
+  ├────────────────────────────────────────────────────────────────────┤
+  │ [picture]                                                          │  ← media
+  ├────────────────────────────────────────────────────────────────────┤
+  │ Athleten in Aktion                                                 │  ← alt text
+  ├────────────────────────────────────────────────────────────────────┤
+  │ DIE CHAMPIONS                                                      │  ← eyebrow/sub-heading
+  ├────────────────────────────────────────────────────────────────────┤
+  │ <h2>Triff die Champions!</h2>                                      │  ← heading
+  ├────────────────────────────────────────────────────────────────────┤
+  │ <p>Entdecken Sie die unglaubliche Welt der TIMBERSPORTS-           │  ← copy
+  │ Athleten: Meister der Kraft, Präzision und Leidenschaft.           │
+  │ Erfahre mehr über die besten Holzfäller der Welt.</p>             │
+  ├──────────────────────────────┬─────────────────────────────────────┤
+  │ [Athleten-Link]              │ primary                             │  ← CTA
+  └──────────────────────────────┴─────────────────────────────────────┘
+══════════════════════════════════════════════════════════════════════ -->
+<div>
+  <div class="text-image image-right ratio-3-2">
+    <div><div>
+      <picture>
+        <img
+          src="https://www.stihl-timbersports.com/content/dam/timbersports/athletepages/Timbersports_WCH24_Jordan_PP_1254.jpg"
+          alt=""
+        />
+      </picture>
+    </div></div>
+    <div><div>Athleten in Aktion bei der Weltmeisterschaft</div></div>
+    <div><div>DIE CHAMPIONS</div></div>
+    <div><div><h2>Triff die Champions!</h2></div></div>
+    <div><div>
+      <p>
+        Entdecken Sie die unglaubliche Welt der TIMBERSPORTS®-Athleten:
+        Meister der Kraft, Präzision und Leidenschaft.
+        Erfahre mehr über die besten Holzfäller der Welt und ihre faszinierenden Geschichten.
+      </p>
+    </div></div>
+    <div>
+      <div><a href="/de/sport/top-athleten">Informiere dich über unsere Top-Athleten</a></div>
+      <div>primary</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════
+  SECTION 7 – IMAGE SEPARATOR (full-width image between sections)
+
+  DA Live table:
+  ┌─────────────────────────────────────────────┐
+  │ image                                       │
+  ├─────────────────────────────────────────────┤
+  │ [full-width picture]                        │
+  ├─────────────────────────────────────────────┤
+  │ (no caption)                                │
+  ├─────────────────────────────────────────────┤
+  │ (no link)                                   │
+  └─────────────────────────────────────────────┘
+══════════════════════════════════════════════════════════════════════ -->
+<div>
+  <div class="image">
+    <div><div>
+      <p>
+        <picture>
+          <img
+            src="https://www.stihl-timbersports.com/content/dam/timbersports/home-and-hubs/Timbersports_WCH24_Setup_DA_0264.jpg"
+            alt="STIHL TIMBERSPORTS® Arena"
+          />
+        </picture>
+      </p>
+    </div></div>
+    <div><div></div></div>
+    <div><div></div></div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════
+  SECTION 8 – HIGHLIGHT TEASER BAR (big-image-teaser)
+
+  DA Live table:
+  ┌─────────────────────────────────────────────┐
+  │ big-image-teaser                            │
+  ├─────────────────────────────────────────────┤
+  │ (no headline)                               │  ← headline row (empty)
+  ├─────────────────────────────────────────────┤
+  │ (no subheadline)                            │
+  ├─────────────────────────────────────────────┤
+  │ (no section link)                           │
+  ├─────────────────────────────────────────────┤
+  │ [image] TIMBERSPORTS SERIES   Entdecke      │  ← single item
+  │          (heading)            unsere        │
+  │                               Fan-Artikel   │
+  └─────────────────────────────────────────────┘
+  Item row: [picture + heading text + copy text + link]
+══════════════════════════════════════════════════════════════════════ -->
+<div>
+  <div class="big-image-teaser">
+    <div><div></div></div>
+    <div><div></div></div>
+    <div><div></div></div>
+    <div>
+      <div>
+        <picture>
+          <img
+            src="https://www.stihl-timbersports.com/content/dam/timbersports/home-and-hubs/Timbersports_WCH24_Setup_DA_0264.jpg"
+            alt="TIMBERSPORTS® Fan-Artikel"
+          />
+        </picture>
+        <p>TIMBERSPORTS SERIES</p>
+        <p>Zeige deine Leidenschaft für STIHL TIMBERSPORTS® mit unseren offiziellen Fan-Artikeln und Merchandise.</p>
+        <a href="https://www.stihl.de/de/suche?text=timbersports">Entdecke unsere Fan-Artikel</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════
+  SECTION 9 – SPONSORS / LOGO SLIDER (logo-slider)
+
+  DA Live table:
+  ┌──────────────────────────────────────────────────────────────────┐
+  │ logo-slider                                                      │
+  ├──────────────────────────────────────────────────────────────────┤
+  │ Unsere Sponsoren                                                 │  ← h2 (optional)
+  ├──────────────────────────────────────────────────────────────────┤
+  │ (no subheadline)                                                 │
+  ├──────────────────────────────────────────────────────────────────┤
+  │ (no link)                                                        │
+  ├────────────────────────┬─────────────────────────────────────────┤
+  │ [logo image]           │ Sponsor Name                            │  ← logo item ×N
+  └────────────────────────┴─────────────────────────────────────────┘
+  Note: Replace logo images with actual sponsor assets when available.
+══════════════════════════════════════════════════════════════════════ -->
+<div>
+  <div class="logo-slider">
+    <div><div><h2>Unsere Sponsoren</h2></div></div>
+    <div><div></div></div>
+    <div><div></div></div>
+    <div>
+      <div><picture><img src="https://www.stihl-timbersports.com/content/dam/timbersports/sponsors/stihl-logo.png" alt="STIHL" /></picture></div>
+      <div>STIHL</div>
+    </div>
+    <div>
+      <div><picture><img src="https://www.stihl-timbersports.com/content/dam/timbersports/sponsors/sponsor-2.png" alt="Sponsor 2" /></picture></div>
+      <div>Sponsor 2</div>
+    </div>
+    <div>
+      <div><picture><img src="https://www.stihl-timbersports.com/content/dam/timbersports/sponsors/sponsor-3.png" alt="Sponsor 3" /></picture></div>
+      <div>Sponsor 3</div>
+    </div>
+    <div>
+      <div><picture><img src="https://www.stihl-timbersports.com/content/dam/timbersports/sponsors/sponsor-4.png" alt="Sponsor 4" /></picture></div>
+      <div>Sponsor 4</div>
+    </div>
+  </div>
+</div>
+
+</main>
+</body>
+</html>
+
